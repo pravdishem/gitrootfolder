@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "d38d322b-cfbe-4f83-af18-2889e883bbf6++5064",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "d38d322b-cfbe-4f83-af18-2889e883bbf6++5064" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "d38d322b-cfbe-4f83-af18-2889e883bbf6++5064" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9661DF4F-AC9A-4D1A-9058-09E4283749D1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "d38d322b-cfbe-4f83-af18-2889e883bbf6++5064" : "Merchant\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DishemMerchant",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DishemMerchant.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/subversion.assembla.com\/svn\/dishemforbusiness",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "d38d322b-cfbe-4f83-af18-2889e883bbf6++5064"
+    }
+  ]
+}
