@@ -81,9 +81,6 @@ class LoginVC: UIViewController {
         let parameters = ["userEmail": self.Username.text, "userPassword": self.Password.text , "lastLoginLat": "\(curLat)", "lastLoginLng": "\(curLong)"]
         
         
-        //        let parameters = ["userEmail": "jacinth9@gmail.com", "userPassword": "1234516" , "lastLoginLat": "\(curLat)", "lastLoginLng": "\(curLong)"]
-        
-        
         
         Alamofire.request(.POST, "http://dishem.com/DishemBusiness/MerchantLogin.php", parameters: parameters as! [String : String])
             .responseJSON { response in
@@ -108,6 +105,8 @@ class LoginVC: UIViewController {
                         for index in 0...MerchantLoginStatus.count-1{
                             
                             let loginStatus: String = MerchantLoginStatus[index].objectForKey("loginStatus") as! String
+                            
+                            
                             print(loginStatus)
                             //                            self.performSegueWithIdentifier("segDashboard", sender: self)
                             

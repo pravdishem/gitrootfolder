@@ -37,6 +37,7 @@
 		FA4A7D591D53530100D1F3F7 /* revs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4A7D581D53530100D1F3F7 /* revs.storyboard */; };
 		FA8219EE1D5B0F7700495B54 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FA8219ED1D5B0F7700495B54 /* Podfile */; };
 		FA8219F01D5B3CB800495B54 /* MenuCategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8219EF1D5B3CB800495B54 /* MenuCategoriesVC.swift */; };
+		FA8219F21D5B508A00495B54 /* MenuItemsVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8219F11D5B508A00495B54 /* MenuItemsVc.swift */; };
 		FAB08CE51D54BEBD005965D1 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB08CE41D54BEBD005965D1 /* SignUpVC.swift */; };
 		FAC2C9471D54C9F000779FE3 /* shaky.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC2C9461D54C9F000779FE3 /* shaky.storyboard */; };
 		FAC2C94A1D54FA5C00779FE3 /* crcombinedoffers.png in Resources */ = {isa = PBXBuildFile; fileRef = FAC2C9481D54FA5C00779FE3 /* crcombinedoffers.png */; };
@@ -84,6 +85,7 @@
 		FA4A7D581D53530100D1F3F7 /* revs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = revs.storyboard; sourceTree = "<group>"; };
 		FA8219ED1D5B0F7700495B54 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FA8219EF1D5B3CB800495B54 /* MenuCategoriesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCategoriesVC.swift; sourceTree = "<group>"; };
+		FA8219F11D5B508A00495B54 /* MenuItemsVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemsVc.swift; sourceTree = "<group>"; };
 		FAB08CE41D54BEBD005965D1 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		FAC2C9461D54C9F000779FE3 /* shaky.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = shaky.storyboard; sourceTree = "<group>"; };
 		FAC2C9481D54FA5C00779FE3 /* crcombinedoffers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crcombinedoffers.png; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				9D4D23381D5ABA2300121A9C /* sriniBoard.storyboard */,
 				C3473AF91D4233AA00A44CC3 /* LaunchScreen.storyboard */,
 				C3473B021D4233CF00A44CC3 /* Main.storyboard */,
+				FA8219F11D5B508A00495B54 /* MenuItemsVc.swift */,
 				FA4A7D581D53530100D1F3F7 /* revs.storyboard */,
 				EFB15C4E1D585031009B7BC7 /* nireesh.storyboard */,
 				FAC2C9461D54C9F000779FE3 /* shaky.storyboard */,
@@ -369,6 +372,7 @@
 				C3473B191D42340100A44CC3 /* DiscountOfferVC.swift in Sources */,
 				C3473B211D42340100A44CC3 /* BillValueOfferVC.swift in Sources */,
 				C3473B241D42340100A44CC3 /* RupeeDiscountOfferAdvVC.swift in Sources */,
+				FA8219F21D5B508A00495B54 /* MenuItemsVc.swift in Sources */,
 				C3473B261D42340100A44CC3 /* myOutletVC.swift in Sources */,
 				C3473B1C1D42340100A44CC3 /* TransactionsVC.swift in Sources */,
 				C3473B1B1D42340100A44CC3 /* RupeesDiscountOfferVC.swift in Sources */,
