@@ -143,7 +143,6 @@
 				FAC2C94C1D54FA6E00779FE3 /* images */,
 				C3473AF71D4233AA00A44CC3 /* Assets.xcassets */,
 				C3473AFC1D4233AA00A44CC3 /* Info.plist */,
-				9D4D23381D5ABA2300121A9C /* sriniBoard.storyboard */,
 			);
 			path = DishemMerchant;
 			sourceTree = "<group>";
@@ -187,6 +186,7 @@
 		FA783F841D5AE33000389B22 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				9D4D23381D5ABA2300121A9C /* sriniBoard.storyboard */,
 				C3473AF91D4233AA00A44CC3 /* LaunchScreen.storyboard */,
 				C3473B021D4233CF00A44CC3 /* Main.storyboard */,
 				FA4A7D581D53530100D1F3F7 /* revs.storyboard */,
