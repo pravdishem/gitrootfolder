@@ -4608,7 +4608,7 @@
         <!--MenuCategoriesVC-->
         <scene sceneID="Aqt-kQ-kwG">
             <objects>
-                <viewController id="swY-20-DBG" userLabel="MenuCategoriesVC" customClass="ManagerregistrationVC" customModule="DishemMerchant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="swY-20-DBG" userLabel="MenuCategoriesVC" customClass="MenuCategoriesVC" customModule="DishemMerchant" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="I0r-gb-VoP"/>
                         <viewControllerLayoutGuide type="bottom" id="Tnb-fV-DCV"/>
@@ -4702,6 +4702,9 @@
                             <constraint firstItem="Tnb-fV-DCV" firstAttribute="top" secondItem="8OR-o1-SS6" secondAttribute="bottom" constant="40" id="ugC-2T-EHr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tvCategories" destination="8OR-o1-SS6" id="GR1-J8-psf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jiu-aq-Umg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
