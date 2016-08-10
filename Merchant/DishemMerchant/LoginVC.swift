@@ -32,7 +32,7 @@ class LoginVC: UIViewController {
         alert.showEdit("Forgot Password", subTitle: "Please enter your email id")
         
     }
-    
+    //Have
     //hello 
     //hiii
     
