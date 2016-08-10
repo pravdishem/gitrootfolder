@@ -22,6 +22,7 @@ class SignUpVC: UIViewController {
         vw_signupbox.layer.shadowOpacity = 0.5
         
     }
+    //comment by nireesh
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
