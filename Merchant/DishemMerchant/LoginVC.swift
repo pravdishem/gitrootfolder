@@ -33,10 +33,7 @@ class LoginVC: UIViewController {
         
     }
     //Have
-    //bye
-    //oy
-    //hello 
-    //hiii
+        //hiii
     
     //Login Button Click
     @IBAction func btnClick_getstarted(sender: AnyObject) {
