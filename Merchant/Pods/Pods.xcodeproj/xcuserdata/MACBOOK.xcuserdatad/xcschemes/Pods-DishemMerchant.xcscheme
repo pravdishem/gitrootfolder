@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '121F6A9518C0ADA2A5C48ED1'
+               BlueprintIdentifier = '3FBDD45AEEED83C8356BA6D2'
                BlueprintName = 'Pods-DishemMerchant'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_DishemMerchant.framework'>

@@ -8,9 +8,11 @@
 
 import UIKit
 import Alamofire
+import SCLAlertView
 
 class LoginVC: UIViewController {
     
+    let alert = SCLAlertView()
     let curLat = 12.88660
     let curLong = 77
     var LoginSucces = false
@@ -26,30 +28,8 @@ class LoginVC: UIViewController {
     //Forgot Password
     @IBAction func btnForgot_click(sender: AnyObject) {
         
-        let alert = UIAlertController(title: "Forgot Password", message: "Enter Email Id", preferredStyle: UIAlertControllerStyle.Alert)
-        
-        
-        
-        //textField!.placeholder = "Enter Emailid"
-        
-        //alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
-        
-        alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { action in
-            switch action.style{
-            case .Default:
-                print("default")
-                
-            case .Cancel:
-                print("cancel")
-                
-            case .Destructive:
-                print("destructive")
-            }
-        }))
-        
-        
-        self.presentViewController(alert, animated: true, completion: nil)
-        
+        let txt = alert.addTextField("Email Id")
+        alert.showEdit("Forgot Password", subTitle: "Please enter your email id")
         
     }
     
