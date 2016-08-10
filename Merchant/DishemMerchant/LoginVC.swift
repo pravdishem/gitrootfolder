@@ -23,6 +23,41 @@ class LoginVC: UIViewController {
     @IBOutlet var Password: UITextField!
     
     
+    //Forgot Password
+    @IBAction func btnForgot_click(sender: AnyObject) {
+        
+        let alert = UIAlertController(title: "Forgot Password", message: "Enter Email Id", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        
+        alert.sty = UIAlertViewStyle.PlainTextInput
+        
+        (alert.textFields![0] as UITextField).text = "abc"
+        
+        //textField!.placeholder = "Enter Emailid"
+        
+        //alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
+        
+        alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { action in
+            switch action.style{
+            case .Default:
+                print("default")
+                
+            case .Cancel:
+                print("cancel")
+                
+            case .Destructive:
+                print("destructive")
+            }
+        }))
+        
+        
+        self.presentViewController(alert, animated: true, completion: nil)
+        
+        
+    }
+    
+    
+    //Login Button Click
     @IBAction func btnClick_getstarted(sender: AnyObject) {
         if(validateInput())
         {
