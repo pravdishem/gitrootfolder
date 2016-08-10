@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		015B58901D52048200A53B1E /* AddMenuItemViC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015B588F1D52048200A53B1E /* AddMenuItemViC.swift */; };
 		015B58921D521FB300A53B1E /* MenuItems1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015B58911D521FB300A53B1E /* MenuItems1ViewController.swift */; };
+		9D4D23391D5ABA2300121A9C /* sriniBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D4D23381D5ABA2300121A9C /* sriniBoard.storyboard */; };
 		C3473AF11D4233A900A44CC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3473AF01D4233A900A44CC3 /* AppDelegate.swift */; };
 		C3473AF81D4233AA00A44CC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3473AF71D4233AA00A44CC3 /* Assets.xcassets */; };
 		C3473AFB1D4233AA00A44CC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3473AF91D4233AA00A44CC3 /* LaunchScreen.storyboard */; };
@@ -51,6 +52,7 @@
 		015B58911D521FB300A53B1E /* MenuItems1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItems1ViewController.swift; sourceTree = "<group>"; };
 		3B20F1F52E0C8563EB6CF465 /* Pods-DishemMerchant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DishemMerchant.release.xcconfig"; path = "Pods/Target Support Files/Pods-DishemMerchant/Pods-DishemMerchant.release.xcconfig"; sourceTree = "<group>"; };
 		8966BA1CEFED79691C737C58 /* Pods-DishemMerchant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DishemMerchant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DishemMerchant/Pods-DishemMerchant.debug.xcconfig"; sourceTree = "<group>"; };
+		9D4D23381D5ABA2300121A9C /* sriniBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = sriniBoard.storyboard; sourceTree = "<group>"; };
 		AD8BA4E37B4E63A21960B09D /* Pods_DishemMerchant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DishemMerchant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3473AED1D4233A900A44CC3 /* DishemMerchant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DishemMerchant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3473AF01D4233A900A44CC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				FAC2C9461D54C9F000779FE3 /* shaky.storyboard */,
 				C3473AF71D4233AA00A44CC3 /* Assets.xcassets */,
 				C3473AFC1D4233AA00A44CC3 /* Info.plist */,
+				9D4D23381D5ABA2300121A9C /* sriniBoard.storyboard */,
 			);
 			path = DishemMerchant;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				FAC2C94E1D54FA8800779FE3 /* crdiscountoffersadv.png in Resources */,
 				FAC2C94B1D54FA5C00779FE3 /* crdiscountoffers.png in Resources */,
 				FAC2C94A1D54FA5C00779FE3 /* crcombinedoffers.png in Resources */,
+				9D4D23391D5ABA2300121A9C /* sriniBoard.storyboard in Resources */,
 				EFB15C4F1D585031009B7BC7 /* nireesh.storyboard in Resources */,
 				FAC2C9471D54C9F000779FE3 /* shaky.storyboard in Resources */,
 				FAC2C9521D54FAAA00779FE3 /* crdiscountoffersimple.png in Resources */,
