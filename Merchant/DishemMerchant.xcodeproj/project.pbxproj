@@ -36,6 +36,7 @@
 		EFB15C4F1D585031009B7BC7 /* nireesh.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB15C4E1D585031009B7BC7 /* nireesh.storyboard */; };
 		FA4A7D591D53530100D1F3F7 /* revs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4A7D581D53530100D1F3F7 /* revs.storyboard */; };
 		FA8219EE1D5B0F7700495B54 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FA8219ED1D5B0F7700495B54 /* Podfile */; };
+		FA8219F01D5B3CB800495B54 /* MenuCategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8219EF1D5B3CB800495B54 /* MenuCategoriesVC.swift */; };
 		FAB08CE51D54BEBD005965D1 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB08CE41D54BEBD005965D1 /* SignUpVC.swift */; };
 		FAC2C9471D54C9F000779FE3 /* shaky.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC2C9461D54C9F000779FE3 /* shaky.storyboard */; };
 		FAC2C94A1D54FA5C00779FE3 /* crcombinedoffers.png in Resources */ = {isa = PBXBuildFile; fileRef = FAC2C9481D54FA5C00779FE3 /* crcombinedoffers.png */; };
@@ -82,6 +83,7 @@
 		EFB15C4E1D585031009B7BC7 /* nireesh.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = nireesh.storyboard; sourceTree = "<group>"; };
 		FA4A7D581D53530100D1F3F7 /* revs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = revs.storyboard; sourceTree = "<group>"; };
 		FA8219ED1D5B0F7700495B54 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FA8219EF1D5B3CB800495B54 /* MenuCategoriesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCategoriesVC.swift; sourceTree = "<group>"; };
 		FAB08CE41D54BEBD005965D1 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		FAC2C9461D54C9F000779FE3 /* shaky.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = shaky.storyboard; sourceTree = "<group>"; };
 		FAC2C9481D54FA5C00779FE3 /* crcombinedoffers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crcombinedoffers.png; sourceTree = "<group>"; };
@@ -143,7 +145,6 @@
 				FAC2C94C1D54FA6E00779FE3 /* images */,
 				C3473AF71D4233AA00A44CC3 /* Assets.xcassets */,
 				C3473AFC1D4233AA00A44CC3 /* Info.plist */,
-				9D4D23381D5ABA2300121A9C /* sriniBoard.storyboard */,
 			);
 			path = DishemMerchant;
 			sourceTree = "<group>";
@@ -170,6 +171,7 @@
 				C3473B101D42340100A44CC3 /* FixedRateOfferVC.swift */,
 				C3473B0D1D42340100A44CC3 /* FreebiesOfferVC.swift */,
 				C3473B2A1D423B6600A44CC3 /* LoginVC.swift */,
+				FA8219EF1D5B3CB800495B54 /* MenuCategoriesVC.swift */,
 				C3473B141D42340100A44CC3 /* myOutletVC.swift */,
 				C3473B151D42340100A44CC3 /* myOutletCVCell.swift */,
 				C3473B0C1D42340100A44CC3 /* OutletTransactionTVCell.swift */,
@@ -187,6 +189,7 @@
 		FA783F841D5AE33000389B22 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				9D4D23381D5ABA2300121A9C /* sriniBoard.storyboard */,
 				C3473AF91D4233AA00A44CC3 /* LaunchScreen.storyboard */,
 				C3473B021D4233CF00A44CC3 /* Main.storyboard */,
 				FA4A7D581D53530100D1F3F7 /* revs.storyboard */,
@@ -354,6 +357,7 @@
 				C3473B1A1D42340100A44CC3 /* PercentageDiscountOfferVC.swift in Sources */,
 				015B58901D52048200A53B1E /* AddMenuItemViC.swift in Sources */,
 				C3473B1F1D42340100A44CC3 /* FreebiesOfferVC.swift in Sources */,
+				FA8219F01D5B3CB800495B54 /* MenuCategoriesVC.swift in Sources */,
 				C3473B251D42340100A44CC3 /* PercentageDiscountOfferAdvVC.swift in Sources */,
 				C3473B201D42340100A44CC3 /* CombinedOfferVC.swift in Sources */,
 				015B58921D521FB300A53B1E /* MenuItems1ViewController.swift in Sources */,
