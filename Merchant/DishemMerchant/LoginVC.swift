@@ -32,8 +32,7 @@ class LoginVC: UIViewController {
         alert.showEdit("Forgot Password", subTitle: "Please enter your email id")
         
     }
-    
-    
+    //hiiii
     //Login Button Click
     @IBAction func btnClick_getstarted(sender: AnyObject) {
         if(validateInput())
@@ -55,6 +54,9 @@ class LoginVC: UIViewController {
         }
     }
 
+    @IBAction func btnsignup(sender: AnyObject) {
+        self.performSegueWithIdentifier("signup", sender: self)
+    }
 
     @IBOutlet weak var vw_loginbox: UIView!
     override func viewDidLoad() {
