@@ -133,32 +133,9 @@
 			isa = PBXGroup;
 			children = (
 				C3473AF01D4233A900A44CC3 /* AppDelegate.swift */,
-				C3473B051D42340100A44CC3 /* DashBoardVC.swift */,
-				C3473B061D42340100A44CC3 /* DesignAnOfferVC.swift */,
-				C3473B071D42340100A44CC3 /* DiscountOfferVC.swift */,
-				C3473B081D42340100A44CC3 /* PercentageDiscountOfferVC.swift */,
-				C3473B091D42340100A44CC3 /* RupeesDiscountOfferVC.swift */,
-				C3473B0E1D42340100A44CC3 /* CombinedOfferVC.swift */,
-				C3473B0A1D42340100A44CC3 /* TransactionsVC.swift */,
-				C3473B0B1D42340100A44CC3 /* TransactionCVCell.swift */,
-				C3473B0C1D42340100A44CC3 /* OutletTransactionTVCell.swift */,
-				C3473B0D1D42340100A44CC3 /* FreebiesOfferVC.swift */,
-				C3473B0F1D42340100A44CC3 /* BillValueOfferVC.swift */,
-				C3473B101D42340100A44CC3 /* FixedRateOfferVC.swift */,
-				C3473B111D42340100A44CC3 /* DiscountOfferAdvVC.swift */,
-				C3473B121D42340100A44CC3 /* RupeeDiscountOfferAdvVC.swift */,
-				C3473B131D42340100A44CC3 /* PercentageDiscountOfferAdvVC.swift */,
-				C3473B141D42340100A44CC3 /* myOutletVC.swift */,
-				015B588F1D52048200A53B1E /* AddMenuItemViC.swift */,
-				C3473B2A1D423B6600A44CC3 /* LoginVC.swift */,
+				FA783F831D5AE31800389B22 /* controllers */,
+				FA783F841D5AE33000389B22 /* views */,
 				FAC2C94C1D54FA6E00779FE3 /* images */,
-				FAB08CE41D54BEBD005965D1 /* SignUpVC.swift */,
-				C3473B151D42340100A44CC3 /* myOutletCVCell.swift */,
-				C3473AF91D4233AA00A44CC3 /* LaunchScreen.storyboard */,
-				C3473B021D4233CF00A44CC3 /* Main.storyboard */,
-				FA4A7D581D53530100D1F3F7 /* revs.storyboard */,
-				EFB15C4E1D585031009B7BC7 /* nireesh.storyboard */,
-				FAC2C9461D54C9F000779FE3 /* shaky.storyboard */,
 				C3473AF71D4233AA00A44CC3 /* Assets.xcassets */,
 				C3473AFC1D4233AA00A44CC3 /* Info.plist */,
 			);
@@ -172,6 +149,45 @@
 				3B20F1F52E0C8563EB6CF465 /* Pods-DishemMerchant.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA783F831D5AE31800389B22 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				015B588F1D52048200A53B1E /* AddMenuItemViC.swift */,
+				C3473B0F1D42340100A44CC3 /* BillValueOfferVC.swift */,
+				C3473B0E1D42340100A44CC3 /* CombinedOfferVC.swift */,
+				C3473B051D42340100A44CC3 /* DashBoardVC.swift */,
+				C3473B061D42340100A44CC3 /* DesignAnOfferVC.swift */,
+				C3473B111D42340100A44CC3 /* DiscountOfferAdvVC.swift */,
+				C3473B071D42340100A44CC3 /* DiscountOfferVC.swift */,
+				C3473B101D42340100A44CC3 /* FixedRateOfferVC.swift */,
+				C3473B0D1D42340100A44CC3 /* FreebiesOfferVC.swift */,
+				C3473B2A1D423B6600A44CC3 /* LoginVC.swift */,
+				C3473B141D42340100A44CC3 /* myOutletVC.swift */,
+				C3473B151D42340100A44CC3 /* myOutletCVCell.swift */,
+				C3473B0C1D42340100A44CC3 /* OutletTransactionTVCell.swift */,
+				C3473B081D42340100A44CC3 /* PercentageDiscountOfferVC.swift */,
+				C3473B131D42340100A44CC3 /* PercentageDiscountOfferAdvVC.swift */,
+				C3473B091D42340100A44CC3 /* RupeesDiscountOfferVC.swift */,
+				C3473B121D42340100A44CC3 /* RupeeDiscountOfferAdvVC.swift */,
+				FAB08CE41D54BEBD005965D1 /* SignUpVC.swift */,
+				C3473B0A1D42340100A44CC3 /* TransactionsVC.swift */,
+				C3473B0B1D42340100A44CC3 /* TransactionCVCell.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		FA783F841D5AE33000389B22 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				C3473AF91D4233AA00A44CC3 /* LaunchScreen.storyboard */,
+				C3473B021D4233CF00A44CC3 /* Main.storyboard */,
+				FA4A7D581D53530100D1F3F7 /* revs.storyboard */,
+				EFB15C4E1D585031009B7BC7 /* nireesh.storyboard */,
+				FAC2C9461D54C9F000779FE3 /* shaky.storyboard */,
+			);
+			name = views;
 			sourceTree = "<group>";
 		};
 		FAC2C94C1D54FA6E00779FE3 /* images */ = {
