@@ -35,6 +35,7 @@ class LoginVC: UIViewController {
     //Have
         //hiii
     //hello
+    //hi
     
     //Login Button Click
     @IBAction func btnClick_getstarted(sender: AnyObject) {
