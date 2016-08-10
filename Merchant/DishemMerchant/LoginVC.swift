@@ -32,7 +32,7 @@ class LoginVC: UIViewController {
         alert.showEdit("Forgot Password", subTitle: "Please enter your email id")
         
     }
-    
+    //hiiii
     //Login Button Click
     @IBAction func btnClick_getstarted(sender: AnyObject) {
         if(validateInput())
