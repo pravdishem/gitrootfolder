@@ -29,9 +29,6 @@ class LoginVC: UIViewController {
         let alert = UIAlertController(title: "Forgot Password", message: "Enter Email Id", preferredStyle: UIAlertControllerStyle.Alert)
         
         
-        alert.sty = UIAlertViewStyle.PlainTextInput
-        
-        (alert.textFields![0] as UITextField).text = "abc"
         
         //textField!.placeholder = "Enter Emailid"
         
