@@ -52,7 +52,7 @@
 
 /* Begin PBXFileReference section */
 		015B588F1D52048200A53B1E /* AddMenuItemViC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMenuItemViC.swift; sourceTree = "<group>"; };
-		015B58911D521FB300A53B1E /* MenuItems1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItems1ViewController.swift; sourceTree = "<group>"; };
+		015B58911D521FB300A53B1E /* MenuItems1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItems1ViewController.swift; path = ../MenuItems1ViewController.swift; sourceTree = "<group>"; };
 		3B20F1F52E0C8563EB6CF465 /* Pods-DishemMerchant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DishemMerchant.release.xcconfig"; path = "Pods/Target Support Files/Pods-DishemMerchant/Pods-DishemMerchant.release.xcconfig"; sourceTree = "<group>"; };
 		8966BA1CEFED79691C737C58 /* Pods-DishemMerchant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DishemMerchant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DishemMerchant/Pods-DishemMerchant.debug.xcconfig"; sourceTree = "<group>"; };
 		9D4D23381D5ABA2300121A9C /* sriniBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = sriniBoard.storyboard; sourceTree = "<group>"; };
@@ -122,7 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				FA8219ED1D5B0F7700495B54 /* Podfile */,
-				015B58911D521FB300A53B1E /* MenuItems1ViewController.swift */,
 				C3473AEF1D4233A900A44CC3 /* DishemMerchant */,
 				C3473AEE1D4233A900A44CC3 /* Products */,
 				C3E6F0400A820828745EE4AD /* Pods */,
@@ -174,6 +173,8 @@
 				C3473B0D1D42340100A44CC3 /* FreebiesOfferVC.swift */,
 				C3473B2A1D423B6600A44CC3 /* LoginVC.swift */,
 				FA8219EF1D5B3CB800495B54 /* MenuCategoriesVC.swift */,
+				FA8219F11D5B508A00495B54 /* MenuItemsVc.swift */,
+				015B58911D521FB300A53B1E /* MenuItems1ViewController.swift */,
 				C3473B141D42340100A44CC3 /* myOutletVC.swift */,
 				C3473B151D42340100A44CC3 /* myOutletCVCell.swift */,
 				C3473B0C1D42340100A44CC3 /* OutletTransactionTVCell.swift */,
@@ -194,9 +195,8 @@
 				9D4D23381D5ABA2300121A9C /* sriniBoard.storyboard */,
 				C3473AF91D4233AA00A44CC3 /* LaunchScreen.storyboard */,
 				C3473B021D4233CF00A44CC3 /* Main.storyboard */,
-				FA8219F11D5B508A00495B54 /* MenuItemsVc.swift */,
-				FA4A7D581D53530100D1F3F7 /* revs.storyboard */,
 				EFB15C4E1D585031009B7BC7 /* nireesh.storyboard */,
+				FA4A7D581D53530100D1F3F7 /* revs.storyboard */,
 				FAC2C9461D54C9F000779FE3 /* shaky.storyboard */,
 			);
 			name = views;
