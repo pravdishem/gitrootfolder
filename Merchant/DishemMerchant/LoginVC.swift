@@ -8,9 +8,11 @@
 
 import UIKit
 import Alamofire
+import SCLAlertView
 
 class LoginVC: UIViewController {
     
+    let alert = SCLAlertView()
     let curLat = 12.88660
     let curLong = 77
     var LoginSucces = false
@@ -26,34 +28,11 @@ class LoginVC: UIViewController {
     //Forgot Password
     @IBAction func btnForgot_click(sender: AnyObject) {
         
-        let alert = UIAlertController(title: "Forgot Password", message: "Enter Email Id", preferredStyle: UIAlertControllerStyle.Alert)
-        
-        
-        
-        //textField!.placeholder = "Enter Emailid"
-        
-        //alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
-        
-        alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { action in
-            switch action.style{
-            case .Default:
-                print("default")
-                
-            case .Cancel:
-                print("cancel")
-                
-            case .Destructive:
-                print("destructive")
-            }
-        }))
-        
-        
-        self.presentViewController(alert, animated: true, completion: nil)
-        
+        let txt = alert.addTextField("Email Id")
+        alert.showEdit("Forgot Password", subTitle: "Please enter your email id")
         
     }
-    
-    
+    //hiiii
     //Login Button Click
     @IBAction func btnClick_getstarted(sender: AnyObject) {
         if(validateInput())
@@ -75,6 +54,9 @@ class LoginVC: UIViewController {
         }
     }
 
+    @IBAction func btnsignup(sender: AnyObject) {
+        self.performSegueWithIdentifier("signup", sender: self)
+    }
 
     @IBOutlet weak var vw_loginbox: UIView!
     override func viewDidLoad() {
@@ -101,9 +83,6 @@ class LoginVC: UIViewController {
         let parameters = ["userEmail": self.Username.text, "userPassword": self.Password.text , "lastLoginLat": "\(curLat)", "lastLoginLng": "\(curLong)"]
         
         
-        //        let parameters = ["userEmail": "jacinth9@gmail.com", "userPassword": "1234516" , "lastLoginLat": "\(curLat)", "lastLoginLng": "\(curLong)"]
-        
-        
         
         Alamofire.request(.POST, "http://dishem.com/DishemBusiness/MerchantLogin.php", parameters: parameters as! [String : String])
             .responseJSON { response in
@@ -128,6 +107,8 @@ class LoginVC: UIViewController {
                         for index in 0...MerchantLoginStatus.count-1{
                             
                             let loginStatus: String = MerchantLoginStatus[index].objectForKey("loginStatus") as! String
+                            
+                            
                             print(loginStatus)
                             //                            self.performSegueWithIdentifier("segDashboard", sender: self)
                             

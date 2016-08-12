@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3FBDD45AEEED83C8356BA6D2'
-               BlueprintName = 'Pods-DishemMerchant'
+               BlueprintIdentifier = '399A806B16ABCC22F5B911EF'
+               BlueprintName = 'SCLAlertView'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods_DishemMerchant.framework'>
+               BuildableName = 'SCLAlertView.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
