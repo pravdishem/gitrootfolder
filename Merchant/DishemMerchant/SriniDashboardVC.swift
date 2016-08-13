@@ -205,7 +205,7 @@ class SriniDashboardVC: UIViewController {
                            toItem: self.view,
                            attribute: .Leading,
                            multiplier: 1.0,
-                           constant: 5.0).active = true
+                           constant: 10.0).active = true
         
         NSLayoutConstraint(item: vw,
                            attribute: .Trailing,
@@ -213,7 +213,7 @@ class SriniDashboardVC: UIViewController {
                            toItem: self.view,
                            attribute: .Trailing,
                            multiplier: 1.0,
-                           constant: -5.0).active = true
+                           constant: -10.0).active = true
         
         NSLayoutConstraint(item: vw,
                            attribute: .Top,
@@ -368,7 +368,7 @@ class SriniDashboardVC: UIViewController {
                            toItem: vw,
                            attribute: .CenterX,
                            multiplier: 1.0,
-                           constant: -(horGap)).active = true
+                           constant: -(horGap/2)).active = true
         
         NSLayoutConstraint(item: img2,
                            attribute: .Leading,
@@ -376,7 +376,7 @@ class SriniDashboardVC: UIViewController {
                            toItem: vw,
                            attribute: .CenterX,
                            multiplier: 1.0,
-                           constant: horGap).active = true
+                           constant: horGap/2).active = true
         
         NSLayoutConstraint(item: img1,
                            attribute: .Width,
