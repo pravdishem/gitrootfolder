@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -180,6 +180,7 @@
                                 <constraints>
                                     <constraint firstItem="rtZ-Jv-D7h" firstAttribute="top" secondItem="78F-xV-4aG" secondAttribute="top" constant="10" id="6pp-dx-EjZ"/>
                                     <constraint firstItem="ZVo-qp-GJT" firstAttribute="centerX" secondItem="78F-xV-4aG" secondAttribute="centerX" id="Ri6-16-kfJ"/>
+                                    <constraint firstAttribute="width" secondItem="rtZ-Jv-D7h" secondAttribute="height" multiplier="348:527" id="Svw-Xv-JAa"/>
                                     <constraint firstItem="pei-ah-bV9" firstAttribute="leading" secondItem="9Iw-8L-KDJ" secondAttribute="leading" id="VBc-3l-jGn"/>
                                     <constraint firstItem="FI0-5u-klj" firstAttribute="top" secondItem="rtZ-Jv-D7h" secondAttribute="bottom" constant="20" id="WA3-Gg-sy2"/>
                                     <constraint firstItem="1HF-wg-47o" firstAttribute="top" secondItem="pei-ah-bV9" secondAttribute="bottom" constant="30" id="YZw-mH-CdC"/>
@@ -904,7 +905,7 @@
                                                 <state key="normal" title="Button" image="myoffers"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfm-m8-Xcp">
-                                                <rect key="frame" x="278" y="0.0" width="263" height="132"/>
+                                                <rect key="frame" x="278" y="0.0" width="262" height="117"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="dfm-m8-Xcp" secondAttribute="height" multiplier="130:104" id="Mxs-7J-rKq"/>
                                                 </constraints>
@@ -923,7 +924,7 @@
                                                 <state key="normal" title="Button" image="consumeraround"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6PO-Q1-h3o">
-                                                <rect key="frame" x="278" y="0.0" width="263" height="132"/>
+                                                <rect key="frame" x="278" y="0.0" width="262" height="118"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="6PO-Q1-h3o" secondAttribute="height" multiplier="130:104" id="wtB-hr-n2n"/>
                                                 </constraints>
@@ -942,7 +943,7 @@
                                                 <state key="normal" title="Button" image="mypeports"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ci7-Bh-YlH">
-                                                <rect key="frame" x="278" y="0.0" width="263" height="132"/>
+                                                <rect key="frame" x="278" y="0.0" width="262" height="117"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ci7-Bh-YlH" secondAttribute="height" multiplier="130:104" id="IlY-06-oWm"/>
                                                 </constraints>
@@ -4736,7 +4737,7 @@
                                         <rect key="frame" x="0.0" y="28" width="520" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uZC-Vl-ban" id="ume-KO-jOH">
-                                            <rect key="frame" x="0.0" y="0.0" width="520" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="520" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -4851,7 +4852,7 @@
                                         <rect key="frame" x="0.0" y="28" width="520" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8tM-xb-NGk" id="w7o-zm-whm">
-                                            <rect key="frame" x="0.0" y="0.0" width="520" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="520" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -4991,7 +4992,7 @@
                                         <rect key="frame" x="392" y="323" width="198" height="157"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Kn-he-F9J">
-                                        <rect key="frame" x="0.0" y="319" width="590" height="5"/>
+                                        <rect key="frame" x="0.0" y="318" width="590" height="5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h9H-Xe-E2p">
