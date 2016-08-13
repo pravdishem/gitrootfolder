@@ -10,6 +10,7 @@
 		015B58901D52048200A53B1E /* AddMenuItemViC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015B588F1D52048200A53B1E /* AddMenuItemViC.swift */; };
 		015B58921D521FB300A53B1E /* MenuItems1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015B58911D521FB300A53B1E /* MenuItems1ViewController.swift */; };
 		9D4D23391D5ABA2300121A9C /* sriniBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D4D23381D5ABA2300121A9C /* sriniBoard.storyboard */; };
+		9D7FAE341D5DD63000528782 /* SriniDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7FAE331D5DD63000528782 /* SriniDashboardVC.swift */; };
 		C3473AF11D4233A900A44CC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3473AF01D4233A900A44CC3 /* AppDelegate.swift */; };
 		C3473AF81D4233AA00A44CC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3473AF71D4233AA00A44CC3 /* Assets.xcassets */; };
 		C3473AFB1D4233AA00A44CC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3473AF91D4233AA00A44CC3 /* LaunchScreen.storyboard */; };
@@ -56,6 +57,7 @@
 		3B20F1F52E0C8563EB6CF465 /* Pods-DishemMerchant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DishemMerchant.release.xcconfig"; path = "Pods/Target Support Files/Pods-DishemMerchant/Pods-DishemMerchant.release.xcconfig"; sourceTree = "<group>"; };
 		8966BA1CEFED79691C737C58 /* Pods-DishemMerchant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DishemMerchant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DishemMerchant/Pods-DishemMerchant.debug.xcconfig"; sourceTree = "<group>"; };
 		9D4D23381D5ABA2300121A9C /* sriniBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = sriniBoard.storyboard; sourceTree = "<group>"; };
+		9D7FAE331D5DD63000528782 /* SriniDashboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SriniDashboardVC.swift; sourceTree = "<group>"; };
 		AD8BA4E37B4E63A21960B09D /* Pods_DishemMerchant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DishemMerchant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3473AED1D4233A900A44CC3 /* DishemMerchant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DishemMerchant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3473AF01D4233A900A44CC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				FAB08CE41D54BEBD005965D1 /* SignUpVC.swift */,
 				C3473B0A1D42340100A44CC3 /* TransactionsVC.swift */,
 				C3473B0B1D42340100A44CC3 /* TransactionCVCell.swift */,
+				9D7FAE331D5DD63000528782 /* SriniDashboardVC.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D7FAE341D5DD63000528782 /* SriniDashboardVC.swift in Sources */,
 				C3473B1E1D42340100A44CC3 /* OutletTransactionTVCell.swift in Sources */,
 				C3473B231D42340100A44CC3 /* DiscountOfferAdvVC.swift in Sources */,
 				C3473B271D42340100A44CC3 /* myOutletCVCell.swift in Sources */,

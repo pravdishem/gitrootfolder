@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="w40-6X-GOa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DuB-KL-xDn">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -10,7 +10,7 @@
         <!--Item 2-->
         <scene sceneID="pfD-VA-bw3">
             <objects>
-                <viewController id="fFM-dz-MFr" sceneMemberID="viewController">
+                <viewController id="fFM-dz-MFr" customClass="SriniDashboardVC" customModule="DishemMerchant" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iIg-2T-Ed6"/>
                         <viewControllerLayoutGuide type="bottom" id="i3v-QE-0Qx"/>
@@ -18,9 +18,98 @@
                     <view key="view" contentMode="scaleToFill" id="bXw-Vb-Grh">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cxb-CL-yQn">
+                                <rect key="frame" x="54" y="28" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" fixedFrame="YES" text="Dashboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34j-Su-hik">
+                                        <rect key="frame" x="41" y="30" width="68" height="22"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logout_icon" translatesAutoresizingMaskIntoConstraints="NO" id="zNn-lf-JEi">
+                                        <rect key="frame" x="136" y="36" width="55" height="44"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OAL-HI-0hk">
+                                <rect key="frame" x="82" y="190" width="354" height="326"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="myoffers" translatesAutoresizingMaskIntoConstraints="NO" id="znw-aj-Rw1">
+                                        <rect key="frame" x="22" y="19" width="62" height="66"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="transactions" translatesAutoresizingMaskIntoConstraints="NO" id="8UX-be-XCh">
+                                        <rect key="frame" x="124" y="19" width="62" height="66"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mypeports" translatesAutoresizingMaskIntoConstraints="NO" id="7Ml-te-kZ0">
+                                        <rect key="frame" x="28" y="212" width="62" height="66"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="consumeraround" translatesAutoresizingMaskIntoConstraints="NO" id="uuW-35-jVZ">
+                                        <rect key="frame" x="28" y="124" width="62" height="66"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="myoutlets" translatesAutoresizingMaskIntoConstraints="NO" id="nI8-aL-PAi">
+                                        <rect key="frame" x="124" y="212" width="62" height="66"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="feedback" translatesAutoresizingMaskIntoConstraints="NO" id="SVC-NM-S9z">
+                                        <rect key="frame" x="136" y="124" width="62" height="66"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="weB-to-NGg">
+                                        <rect key="frame" x="267" y="29" width="46" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Design an Offer">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imY-UI-Ob7">
+                                        <rect key="frame" x="262" y="102" width="46" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Redeem an Offer">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iaf-sU-3li">
+                                        <rect key="frame" x="250" y="170" width="46" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="About Dishem">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSi-TA-W26">
+                                        <rect key="frame" x="242" y="230" width="46" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Help">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" image="activeoffer_icon" id="OL2-hZ-g4b"/>
+                    <connections>
+                        <outlet property="btn1" destination="weB-to-NGg" id="LZ2-Qe-2rG"/>
+                        <outlet property="btn2" destination="imY-UI-Ob7" id="oef-yn-nJN"/>
+                        <outlet property="btn3" destination="Iaf-sU-3li" id="lAc-Tm-mro"/>
+                        <outlet property="btn4" destination="ZSi-TA-W26" id="oVG-ay-bTT"/>
+                        <outlet property="dashtitle" destination="34j-Su-hik" id="BsJ-jr-UsF"/>
+                        <outlet property="img1" destination="znw-aj-Rw1" id="foW-LY-ZYr"/>
+                        <outlet property="img2" destination="8UX-be-XCh" id="ycg-a2-iYX"/>
+                        <outlet property="img3" destination="uuW-35-jVZ" id="CCb-BN-54N"/>
+                        <outlet property="img4" destination="SVC-NM-S9z" id="aLH-px-bkD"/>
+                        <outlet property="img5" destination="7Ml-te-kZ0" id="LK9-Mo-a7B"/>
+                        <outlet property="img6" destination="nI8-aL-PAi" id="pAa-Sy-mgY"/>
+                        <outlet property="topimg" destination="zNn-lf-JEi" id="5Iy-qf-uW1"/>
+                        <outlet property="topvw" destination="cxb-CL-yQn" id="evm-hg-eOe"/>
+                        <outlet property="vw" destination="OAL-HI-0hk" id="zVU-1O-dgN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xit-XL-Qid" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -236,7 +325,7 @@
         <scene sceneID="7ht-08-JAX">
             <objects>
                 <tabBarController id="DuB-KL-xDn" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="nDh-sk-EF7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -255,6 +344,7 @@
         <image name="activeoffer_icon" width="30" height="30"/>
         <image name="consumeraround" width="488" height="386"/>
         <image name="feedback" width="488" height="387"/>
+        <image name="logout_icon" width="60" height="60"/>
         <image name="myoffers" width="488" height="387"/>
         <image name="myoutlets" width="488" height="387"/>
         <image name="mypeports" width="488" height="387"/>
