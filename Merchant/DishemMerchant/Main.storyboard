@@ -217,7 +217,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4637" y="-2692"/>
+            <point key="canvasLocation" x="-5077" y="-4108"/>
         </scene>
         <!--Sign UpVC-->
         <scene sceneID="NvU-eJ-FgD">
@@ -334,10 +334,10 @@
             </objects>
             <point key="canvasLocation" x="-3815" y="-3404"/>
         </scene>
-        <!--View Controller-->
+        <!--OTPVerifyVC-->
         <scene sceneID="QCT-Uj-Cl7">
             <objects>
-                <viewController id="RkP-YM-Plz" sceneMemberID="viewController">
+                <viewController id="RkP-YM-Plz" userLabel="OTPVerifyVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zp7-Wy-uMb"/>
                         <viewControllerLayoutGuide type="bottom" id="RbL-bt-ZFe"/>
@@ -771,6 +771,44 @@
             </objects>
             <point key="canvasLocation" x="-2297" y="-592"/>
         </scene>
+        <!--Notifiactions-->
+        <scene sceneID="c3Y-9B-gFX">
+            <objects>
+                <viewController id="zpo-Bm-Tdm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0jr-RH-JFL"/>
+                        <viewControllerLayoutGuide type="bottom" id="OVL-nI-xtr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="V9D-OQ-Yqv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Notifiactions" image="activeoffer_icon" id="e36-rP-ivv" userLabel="Notifications"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ww6-1u-QPR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3522" y="-2325"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="jVQ-O9-3gO">
+            <objects>
+                <tabBarController id="9pc-Ig-iBN" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="w2Z-Iz-Cie">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="zpo-Bm-Tdm" kind="relationship" relationship="viewControllers" id="aHL-bR-6Bj"/>
+                        <segue destination="fe3-QU-Ou6" kind="relationship" relationship="viewControllers" id="yFX-Lb-JE8"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3XW-Kx-oGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4380" y="-2819"/>
+        </scene>
         <!--Dash BoardVC-->
         <scene sceneID="o6U-Ui-1T9">
             <objects>
@@ -783,7 +821,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xuh-yf-GNs">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xuh-yf-GNs">
                                 <rect key="frame" x="30" y="64" width="540" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rS-ek-tAd">
@@ -852,14 +890,14 @@
                                     <constraint firstItem="xgc-Rm-Sov" firstAttribute="centerY" secondItem="1oN-bk-MOx" secondAttribute="centerY" id="YY4-nt-Xoy"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="EGd-DX-qmv">
-                                <rect key="frame" x="30" y="119" width="540" height="426"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="EGd-DX-qmv">
+                                <rect key="frame" x="30" y="119" width="540" height="382"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="kJ3-cx-WEe">
-                                        <rect key="frame" x="0.0" y="0.0" width="540" height="132"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="540" height="117"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qst-r8-QtL">
-                                                <rect key="frame" x="0.0" y="0.0" width="263" height="132"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="263" height="117"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Qst-r8-QtL" secondAttribute="height" multiplier="130:104" id="fK5-q0-pO8"/>
                                                 </constraints>
@@ -875,10 +913,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="751-2b-Hfa">
-                                        <rect key="frame" x="0.0" y="147" width="540" height="132"/>
+                                        <rect key="frame" x="0.0" y="132" width="540" height="118"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69u-cI-97m">
-                                                <rect key="frame" x="0.0" y="0.0" width="263" height="132"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="263" height="118"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="69u-cI-97m" secondAttribute="height" multiplier="130:104" id="xET-OQ-DKe"/>
                                                 </constraints>
@@ -894,10 +932,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="9eA-Kp-pHW">
-                                        <rect key="frame" x="0.0" y="294" width="540" height="132"/>
+                                        <rect key="frame" x="0.0" y="265" width="540" height="117"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7p-zP-FkE">
-                                                <rect key="frame" x="0.0" y="0.0" width="263" height="132"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="263" height="117"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="G7p-zP-FkE" secondAttribute="height" multiplier="130:104" id="jL0-AZ-vf5"/>
                                                 </constraints>
@@ -2457,10 +2495,10 @@
             </objects>
             <point key="canvasLocation" x="-1625" y="-592"/>
         </scene>
-        <!--View Controller-->
+        <!--IAmOwnerManagerVC-->
         <scene sceneID="BGy-an-1OP">
             <objects>
-                <viewController id="r5g-Th-uaZ" sceneMemberID="viewController">
+                <viewController id="r5g-Th-uaZ" userLabel="IAmOwnerManagerVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Q2O-2y-FnN"/>
                         <viewControllerLayoutGuide type="bottom" id="9aa-i6-ATO"/>
@@ -3565,6 +3603,36 @@
             </objects>
             <point key="canvasLocation" x="-89" y="-3409"/>
         </scene>
+        <!--LocateOutletVC-->
+        <scene sceneID="Kcw-RT-jpU">
+            <objects>
+                <viewController id="dLf-eF-psp" userLabel="LocateOutletVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xZa-RX-y2L"/>
+                        <viewControllerLayoutGuide type="bottom" id="xsH-nz-VHB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dxh-6T-jfj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Map here and allow user to select location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzx-Ys-rbL">
+                                <rect key="frame" x="37" y="40" width="368" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pzx-Ys-rbL" firstAttribute="top" secondItem="xZa-RX-y2L" secondAttribute="bottom" constant="20" id="4CM-86-AUp"/>
+                            <constraint firstItem="pzx-Ys-rbL" firstAttribute="leading" secondItem="Dxh-6T-jfj" secondAttribute="leadingMargin" constant="17" id="rDA-TY-d4f"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ren-vc-Fpv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756" y="-3553"/>
+        </scene>
         <!--OptionsToFillVC-->
         <scene sceneID="qx3-aM-bu6">
             <objects>
@@ -4187,10 +4255,10 @@
             </objects>
             <point key="canvasLocation" x="325" y="-2637"/>
         </scene>
-        <!--AddLogoVC-->
+        <!--ContinueScreenVC-->
         <scene sceneID="zVE-cA-u0m">
             <objects>
-                <viewController id="0aM-br-eRg" userLabel="AddLogoVC" customClass="ManagerregistrationVC" customModule="DishemMerchant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0aM-br-eRg" userLabel="ContinueScreenVC" customClass="ManagerregistrationVC" customModule="DishemMerchant" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xiD-Yj-TMT"/>
                         <viewControllerLayoutGuide type="bottom" id="FzO-tQ-cw5"/>
@@ -4410,10 +4478,10 @@
             </objects>
             <point key="canvasLocation" x="995" y="-2637"/>
         </scene>
-        <!--AddLogoVC-->
+        <!--AddOutlet2VC-->
         <scene sceneID="5uT-uQ-PRN">
             <objects>
-                <viewController id="ZAL-E5-OOx" userLabel="AddLogoVC" customClass="ManagerregistrationVC" customModule="DishemMerchant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZAL-E5-OOx" userLabel="AddOutlet2VC" customClass="ManagerregistrationVC" customModule="DishemMerchant" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZOb-qF-qAb"/>
                         <viewControllerLayoutGuide type="bottom" id="Wl9-mC-JsH"/>
@@ -4835,7 +4903,7 @@
             </objects>
             <point key="canvasLocation" x="-5419" y="-2652"/>
         </scene>
-        <!--home-->
+        <!--Item-->
         <scene sceneID="0Ju-D2-mr9">
             <objects>
                 <viewController id="fe3-QU-Ou6" sceneMemberID="viewController">
@@ -4908,19 +4976,19 @@
                                 <rect key="frame" x="5" y="80" width="590" height="480"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="myoffers" translatesAutoresizingMaskIntoConstraints="NO" id="a7l-2W-ooZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="180" height="143"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="198" height="157"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="a7l-2W-ooZ" secondAttribute="height" multiplier="488:386" id="liC-Eh-0ie"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="consumeraround" translatesAutoresizingMaskIntoConstraints="NO" id="MLK-hg-xqe">
-                                        <rect key="frame" x="0.0" y="145" width="180" height="142"/>
+                                        <rect key="frame" x="0.0" y="162" width="198" height="156"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="mypeports" translatesAutoresizingMaskIntoConstraints="NO" id="RFL-P0-ZGE">
-                                        <rect key="frame" x="0.0" y="289" width="180" height="142"/>
+                                        <rect key="frame" x="0.0" y="323" width="198" height="157"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="myoutlets" translatesAutoresizingMaskIntoConstraints="NO" id="Zgp-ud-GNw">
-                                        <rect key="frame" x="410" y="289" width="180" height="142"/>
+                                        <rect key="frame" x="392" y="323" width="198" height="157"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Kn-he-F9J">
                                         <rect key="frame" x="0.0" y="319" width="590" height="5"/>
@@ -4934,13 +5002,13 @@
                                         </constraints>
                                     </view>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="feedback" translatesAutoresizingMaskIntoConstraints="NO" id="irv-s9-z0f">
-                                        <rect key="frame" x="410" y="145" width="180" height="142"/>
+                                        <rect key="frame" x="392" y="162" width="198" height="156"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="transactions" translatesAutoresizingMaskIntoConstraints="NO" id="B00-24-qSp">
-                                        <rect key="frame" x="410" y="0.0" width="180" height="143"/>
+                                        <rect key="frame" x="392" y="0.0" width="198" height="157"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nSX-Kn-sa7">
-                                        <rect key="frame" x="180" y="0.0" width="230" height="480"/>
+                                        <rect key="frame" x="198" y="0.0" width="194" height="480"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="10" id="Fzc-KM-Vt3"/>
@@ -5009,7 +5077,8 @@
                             <constraint firstAttribute="trailing" secondItem="91v-DD-je3" secondAttribute="trailing" constant="5" id="umD-ff-93C"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="home" image="activeoffer_icon" id="Dpa-ce-Phh"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="alcohol_icon" id="JTn-Vc-cqS"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gdn-Dx-AYt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -5021,6 +5090,7 @@
         <image name="add_outlets" width="80" height="80"/>
         <image name="addcertificate" width="300" height="200"/>
         <image name="addlogo" width="300" height="200"/>
+        <image name="alcohol_icon" width="40" height="40"/>
         <image name="clickedbox" width="80" height="80"/>
         <image name="consumeraround" width="488" height="386"/>
         <image name="crcombinedoffers.png" width="341" height="341"/>
@@ -5047,10 +5117,10 @@
         <image name="verify" width="300" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cqu-Wd-hqd"/>
+        <segue reference="a5b-Fa-XDs"/>
         <segue reference="4Lh-rw-yVR"/>
-        <segue reference="7vk-oO-SDT"/>
-        <segue reference="KfF-FB-L2F"/>
+        <segue reference="W2S-GA-afB"/>
         <segue reference="dFR-K0-Tkh"/>
+        <segue reference="KfF-FB-L2F"/>
     </inferredMetricsTieBreakers>
 </document>
