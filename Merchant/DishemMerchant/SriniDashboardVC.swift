@@ -29,6 +29,13 @@ class SriniDashboardVC: UIViewController {
     @IBOutlet weak var btn4: UIButton!
     
     let aspectRatio = CGFloat(488.0/386.0)
+    let topAndBottomMinimum : CGFloat = 15.0
+    let leftRightGap : CGFloat = 15.0
+    let btnToImgs : CGFloat = 12.0
+    let horGap : CGFloat = 10.0
+    let verGap : CGFloat = 10.0
+    let btnHt : CGFloat = 30.0
+    let topVwHt : CGFloat = 50.0
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -50,8 +57,8 @@ class SriniDashboardVC: UIViewController {
       //  let screenSize: CGRect = UIScreen.mainScreen().bounds
        // print(" sw \(screenSize.width) vh \(vw.bounds.width)")
         
-        let widthConstraint = (vw.bounds.width - 10)/(2*aspectRatio)
-        let heightConstraint = (vw.bounds.height - 30*2 - 5*6)/3
+        let widthConstraint = (vw.bounds.width - horGap)/(2*aspectRatio)
+        let heightConstraint = (vw.bounds.height - btnHt*2 - topAndBottomMinimum*2 - btnToImgs*2 - verGap*2)/3
         print("wc \(widthConstraint) hc \(heightConstraint)")
         
         if(widthConstraint < heightConstraint)
@@ -61,8 +68,8 @@ class SriniDashboardVC: UIViewController {
                                relatedBy: .Equal,
                                toItem: nil,
                                attribute: .NotAnAttribute,
-                               multiplier: 1.0,
-                               constant: widthConstraint).active = true
+                               multiplier: 0.0,
+                               constant: widthConstraint*aspectRatio).active = true
         }
         else
         {
@@ -71,7 +78,7 @@ class SriniDashboardVC: UIViewController {
                                relatedBy: .Equal,
                                toItem: nil,
                                attribute: .NotAnAttribute,
-                               multiplier: 1.0,
+                               multiplier: 0.0,
                                constant: heightConstraint).active = true
         }
         
@@ -132,13 +139,13 @@ class SriniDashboardVC: UIViewController {
                            toItem: nil,
                            attribute: .NotAnAttribute,
                            multiplier: 0.0,
-                           constant: 50.0).active = true
+                           constant: topVwHt).active = true
         
         NSLayoutConstraint(item: topvw,
                            attribute: .Top,
                            relatedBy: .Equal,
                            toItem: self.view,
-                           attribute: .TopMargin,
+                           attribute: .Top,
                            multiplier: 1.0,
                            constant: 0.0).active = true
         
@@ -156,7 +163,7 @@ class SriniDashboardVC: UIViewController {
                            toItem: topvw,
                            attribute: .CenterY,
                            multiplier: 1.0,
-                           constant: 0.0).active = true
+                           constant: 8.0).active = true
         
         
         NSLayoutConstraint(item: topimg,
@@ -189,7 +196,7 @@ class SriniDashboardVC: UIViewController {
                            toItem: topvw,
                            attribute: .CenterY,
                            multiplier: 1.0,
-                           constant: 0.0).active = true
+                           constant: 8.0).active = true
         
         
         NSLayoutConstraint(item: vw,
@@ -214,7 +221,7 @@ class SriniDashboardVC: UIViewController {
                            toItem: topvw,
                            attribute: .Bottom,
                            multiplier: 1.0,
-                           constant: 10.0).active = true
+                           constant: 0.0).active = true
         
         NSLayoutConstraint(item: vw,
                            attribute: .Bottom,
@@ -222,7 +229,7 @@ class SriniDashboardVC: UIViewController {
                            toItem: self.view,
                            attribute: .Bottom,
                            multiplier: 1.0,
-                           constant: -10.0).active = true
+                           constant: 0.0).active = true
         
         NSLayoutConstraint(item: img1,
                            attribute: .Width,
@@ -345,7 +352,7 @@ class SriniDashboardVC: UIViewController {
                            toItem: img3,
                            attribute: .Top,
                            multiplier: 1.0,
-                           constant: -5.0).active = true
+                           constant: -(verGap)).active = true
         
         NSLayoutConstraint(item: img5,
                            attribute: .Top,
@@ -353,7 +360,7 @@ class SriniDashboardVC: UIViewController {
                            toItem: img3,
                            attribute: .Bottom,
                            multiplier: 1.0,
-                           constant: 5.0).active = true
+                           constant: verGap).active = true
         
         NSLayoutConstraint(item: img1,
                            attribute: .Trailing,
@@ -361,7 +368,7 @@ class SriniDashboardVC: UIViewController {
                            toItem: vw,
                            attribute: .CenterX,
                            multiplier: 1.0,
-                           constant: -5.0).active = true
+                           constant: -(horGap)).active = true
         
         NSLayoutConstraint(item: img2,
                            attribute: .Leading,
@@ -369,7 +376,7 @@ class SriniDashboardVC: UIViewController {
                            toItem: vw,
                            attribute: .CenterX,
                            multiplier: 1.0,
-                           constant: 5.0).active = true
+                           constant: horGap).active = true
         
         NSLayoutConstraint(item: img1,
                            attribute: .Width,
@@ -425,7 +432,7 @@ class SriniDashboardVC: UIViewController {
                            toItem: vw,
                            attribute: .CenterX,
                            multiplier: 1.0,
-                           constant: -5.0).active = true
+                           constant: -(horGap)).active = true
         
         NSLayoutConstraint(item: btn2,
                            attribute: .Leading,
@@ -433,7 +440,7 @@ class SriniDashboardVC: UIViewController {
                            toItem: vw,
                            attribute: .CenterX,
                            multiplier: 1.0,
-                           constant: 5.0).active = true
+                           constant: horGap).active = true
         
         NSLayoutConstraint(item: btn2,
                            attribute: .Trailing,
@@ -457,7 +464,7 @@ class SriniDashboardVC: UIViewController {
                            toItem: vw,
                            attribute: .CenterX,
                            multiplier: 1.0,
-                           constant: -5.0).active = true
+                           constant: -(horGap)).active = true
         
         NSLayoutConstraint(item: btn4,
                            attribute: .Leading,
@@ -465,7 +472,7 @@ class SriniDashboardVC: UIViewController {
                            toItem: vw,
                            attribute: .CenterX,
                            multiplier: 1.0,
-                           constant: 5.0).active = true
+                           constant: horGap).active = true
         
         NSLayoutConstraint(item: btn4,
                            attribute: .Trailing,
@@ -481,7 +488,7 @@ class SriniDashboardVC: UIViewController {
                            toItem: nil,
                            attribute: .NotAnAttribute,
                            multiplier: 0.0,
-                           constant: 30.0).active = true
+                           constant: btnHt).active = true
         
         NSLayoutConstraint(item: btn2,
                            attribute: .Height,
@@ -489,7 +496,7 @@ class SriniDashboardVC: UIViewController {
                            toItem: nil,
                            attribute: .NotAnAttribute,
                            multiplier: 0.0,
-                           constant: 30.0).active = true
+                           constant: btnHt).active = true
         
         NSLayoutConstraint(item: btn3,
                            attribute: .Height,
@@ -497,7 +504,7 @@ class SriniDashboardVC: UIViewController {
                            toItem: nil,
                            attribute: .NotAnAttribute,
                            multiplier: 0.0,
-                           constant: 30.0).active = true
+                           constant: btnHt).active = true
         
         NSLayoutConstraint(item: btn4,
                            attribute: .Height,
@@ -505,7 +512,7 @@ class SriniDashboardVC: UIViewController {
                            toItem: nil,
                            attribute: .NotAnAttribute,
                            multiplier: 0.0,
-                           constant: 30.0).active = true
+                           constant: btnHt).active = true
         
         NSLayoutConstraint(item: btn1,
                            attribute: .Bottom,
@@ -513,7 +520,7 @@ class SriniDashboardVC: UIViewController {
                            toItem: img1,
                            attribute: .Top,
                            multiplier: 1.0,
-                           constant: -5.0).active = true
+                           constant: -(btnToImgs)).active = true
         
         NSLayoutConstraint(item: btn2,
                            attribute: .Bottom,
@@ -521,7 +528,7 @@ class SriniDashboardVC: UIViewController {
                            toItem: img1,
                            attribute: .Top,
                            multiplier: 1.0,
-                           constant: -5.0).active = true
+                           constant: -(btnToImgs)).active = true
         
         NSLayoutConstraint(item: btn3,
                            attribute: .Top,
@@ -529,7 +536,7 @@ class SriniDashboardVC: UIViewController {
                            toItem: img5,
                            attribute: .Bottom,
                            multiplier: 1.0,
-                           constant: 5.0).active = true
+                           constant: btnToImgs).active = true
         
         NSLayoutConstraint(item: btn4,
                            attribute: .Top,
@@ -537,7 +544,7 @@ class SriniDashboardVC: UIViewController {
                            toItem: img5,
                            attribute: .Bottom,
                            multiplier: 1.0,
-                           constant: 5.0).active = true
+                           constant: btnToImgs).active = true
         
         
         
