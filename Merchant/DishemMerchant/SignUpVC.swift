@@ -14,11 +14,15 @@ class SignUpVC: UIViewController {
     let curLat = 12.88660
     let curLong = 77
 
+    @IBAction func btnsignup(sender: AnyObject) {
+      signup()
+    }
     @IBOutlet weak var mobno: UITextField!
     @IBOutlet weak var SetPassword: UITextField!
     @IBOutlet weak var emailtxt: UITextField!
     @IBOutlet weak var fullnametxt: UITextField!
     @IBOutlet weak var vw_signupbox: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -40,14 +44,36 @@ class SignUpVC: UIViewController {
     }
     func signup()
     {
-    let parameters = ["Entername": self.fullnametxt.text, "Enter EmailId": self.emailtxt.text,"SetPassword": self.SetPassword.text ,"Entermobno": self.mobno.text , "lastLoginLat": "\(curLat)", "lastLoginLng": "\(curLong)"]
+        
+        
+//        let parameters = ["userEmail": "megha@gmail.com" ,
+//                          "userPassword": self.SetPassword.text,
+//                          "userTypeId":"-1",
+//                          "userMobileNumber": self.mobno.text,
+//                           "userFirstName":self.fullnametxt.text,
+//                            "userLastName":"K",
+//                            "userLoggedInVia":3,
+//                            "userRegistrationLat":12.12417,
+//                            "userRegistrationLng" :77.2124,
+//                            "lastLoginLat":12.12417,
+//                            "lastLoginLng":77.2124]
+        
+        
+        
+        let parameters  = ["userEmail":self.emailtxt.text!,"userPassword": self.SetPassword.text!,"userMobileNumber": self.mobno.text!,"userTypeId":0,
+        "userFirstName":"arjun","userLastName":"M","userLoggedInVia":3,
+        "userRegistrationLat":12.12417,"userRegistrationLng" :77.2124,
+        "lastLoginLat":12.12417,"lastLoginLng":77.2124]
+
+        
+        
+//
+    
+//let parameters = ["userEmail": "jacinth9@gmail.com", "userPassword": "1234516" , "lastLoginLat": "\(curLat)", "lastLoginLng": "\(curLong)"]
     
     
-    //        let parameters = ["userEmail": "jacinth9@gmail.com", "userPassword": "1234516" , "lastLoginLat": "\(curLat)", "lastLoginLng": "\(curLong)"]
     
-    
-    
-    Alamofire.request(.POST, "http://dishem.com/DishemBusiness/MerchantLogin.php", parameters: parameters as! [String : String])
+        Alamofire.request(.POST, "http://dishem.com/DishemBusiness/MerchantRegistration.php", parameters: parameters as! [String : AnyObject])
     .responseJSON { response in
     print(response.request)  // original URL request
     print(response.response) // URL response
@@ -63,47 +89,48 @@ class SignUpVC: UIViewController {
     
     
     
-    let MerchantLoginStatus:NSArray = Response.objectForKey("MerchantLoginStatus") as! NSArray
+   let MerchantSignUpStatus:NSArray = Response.objectForKey("MerchantSignUpStatus") as! NSArray
     
-    if(MerchantLoginStatus.count > 0){
+    if(MerchantSignUpStatus.count > 0){
     
-    for index in 0...MerchantLoginStatus.count-1{
+    for index in 0...MerchantSignUpStatus.count-1{
     
-    let loginStatus: String = MerchantLoginStatus[index].objectForKey("loginStatus") as! String
-    print(loginStatus)
+   let emailMoblileExists: String = (MerchantSignUpStatus[index].objectForKey("createUserStatus") as! String)
+    print(emailMoblileExists)
+        
     //                            self.performSegueWithIdentifier("segDashboard", sender: self)
     
     
     
-    if(loginStatus == "success"){
-    self.performSegueWithIdentifier("segDashboard", sender: self)
+  if(emailMoblileExists == "success"){
+  self.performSegueWithIdentifier("otp", sender: self)
     //self.LoginSuccess = true
     //                                print(self.LoginSucces)
-    }
+    
     
     //                            dispatch_async(dispatch_get_main_queue()){
     //                                if(self.LoginSucces == true){
     //
     //
     //
-    //                                }
+                                  }
     
     else{
     print ("login failed")
     
     
     
-    let alertController = UIAlertController(title: "", message: "You Have Entered An Incorrect Password, Please Enter Your Correct Username and Password  ", preferredStyle: .Alert)
+    let alertController = UIAlertController(title: "", message: "PLEASE enter valid data ", preferredStyle: .Alert)
     let acceptance = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
     alertController.addAction(acceptance)
     self.presentViewController(alertController, animated: true, completion: nil)
-    }
+   }
     }
     
     }
-    }
-    }
-    }
+   }
+}
+}
 
     /*
     // MARK: - Navigation
@@ -116,3 +143,4 @@ class SignUpVC: UIViewController {
     */
 
 }
+
