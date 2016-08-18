@@ -34,7 +34,13 @@
 		C3473B271D42340100A44CC3 /* myOutletCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3473B151D42340100A44CC3 /* myOutletCVCell.swift */; };
 		C3473B2B1D423B6600A44CC3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3473B2A1D423B6600A44CC3 /* LoginVC.swift */; };
 		C447721E54C51BB1EF18767F /* Pods_DishemMerchant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD8BA4E37B4E63A21960B09D /* Pods_DishemMerchant.framework */; };
+		EF2029551D6483A100F232AC /* offerTemplatesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2029541D6483A100F232AC /* offerTemplatesVC.swift */; };
+		EF2029591D6484B400F232AC /* offerTemplatesCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2029581D6484B400F232AC /* offerTemplatesCVCell.swift */; };
+		EF20295B1D64851D00F232AC /* offerTemplateTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF20295A1D64851D00F232AC /* offerTemplateTVCell.swift */; };
+		EF544F671D6333130078B80A /* managerReviewTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF544F661D6333130078B80A /* managerReviewTVCell.swift */; };
 		EFB15C4F1D585031009B7BC7 /* nireesh.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB15C4E1D585031009B7BC7 /* nireesh.storyboard */; };
+		EFF272531D6322BB00DE7F91 /* managerReviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF272521D6322BB00DE7F91 /* managerReviewVC.swift */; };
+		EFF272551D63237300DE7F91 /* managerReviewCVcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF272541D63237300DE7F91 /* managerReviewCVcell.swift */; };
 		FA4A7D591D53530100D1F3F7 /* revs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4A7D581D53530100D1F3F7 /* revs.storyboard */; };
 		FA8219EE1D5B0F7700495B54 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FA8219ED1D5B0F7700495B54 /* Podfile */; };
 		FA8219F01D5B3CB800495B54 /* MenuCategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8219EF1D5B3CB800495B54 /* MenuCategoriesVC.swift */; };
@@ -83,7 +89,13 @@
 		C3473B141D42340100A44CC3 /* myOutletVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myOutletVC.swift; sourceTree = "<group>"; };
 		C3473B151D42340100A44CC3 /* myOutletCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myOutletCVCell.swift; sourceTree = "<group>"; };
 		C3473B2A1D423B6600A44CC3 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		EF2029541D6483A100F232AC /* offerTemplatesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = offerTemplatesVC.swift; sourceTree = "<group>"; };
+		EF2029581D6484B400F232AC /* offerTemplatesCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = offerTemplatesCVCell.swift; path = ../offerTemplatesCVCell.swift; sourceTree = "<group>"; };
+		EF20295A1D64851D00F232AC /* offerTemplateTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = offerTemplateTVCell.swift; sourceTree = "<group>"; };
+		EF544F661D6333130078B80A /* managerReviewTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = managerReviewTVCell.swift; path = ../managerReviewTVCell.swift; sourceTree = "<group>"; };
 		EFB15C4E1D585031009B7BC7 /* nireesh.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = nireesh.storyboard; sourceTree = "<group>"; };
+		EFF272521D6322BB00DE7F91 /* managerReviewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = managerReviewVC.swift; path = ../managerReviewVC.swift; sourceTree = "<group>"; };
+		EFF272541D63237300DE7F91 /* managerReviewCVcell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = managerReviewCVcell.swift; sourceTree = "<group>"; };
 		FA4A7D581D53530100D1F3F7 /* revs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = revs.storyboard; sourceTree = "<group>"; };
 		FA8219ED1D5B0F7700495B54 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FA8219EF1D5B3CB800495B54 /* MenuCategoriesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCategoriesVC.swift; sourceTree = "<group>"; };
@@ -174,11 +186,17 @@
 				C3473B101D42340100A44CC3 /* FixedRateOfferVC.swift */,
 				C3473B0D1D42340100A44CC3 /* FreebiesOfferVC.swift */,
 				C3473B2A1D423B6600A44CC3 /* LoginVC.swift */,
+				EFF272521D6322BB00DE7F91 /* managerReviewVC.swift */,
+				EFF272541D63237300DE7F91 /* managerReviewCVcell.swift */,
+				EF544F661D6333130078B80A /* managerReviewTVCell.swift */,
 				FA8219EF1D5B3CB800495B54 /* MenuCategoriesVC.swift */,
 				FA8219F11D5B508A00495B54 /* MenuItemsVc.swift */,
 				015B58911D521FB300A53B1E /* MenuItems1ViewController.swift */,
 				C3473B141D42340100A44CC3 /* myOutletVC.swift */,
 				C3473B151D42340100A44CC3 /* myOutletCVCell.swift */,
+				EF2029541D6483A100F232AC /* offerTemplatesVC.swift */,
+				EF2029581D6484B400F232AC /* offerTemplatesCVCell.swift */,
+				EF20295A1D64851D00F232AC /* offerTemplateTVCell.swift */,
 				C3473B0C1D42340100A44CC3 /* OutletTransactionTVCell.swift */,
 				C3473B081D42340100A44CC3 /* PercentageDiscountOfferVC.swift */,
 				C3473B131D42340100A44CC3 /* PercentageDiscountOfferAdvVC.swift */,
@@ -359,19 +377,25 @@
 				C3473B1E1D42340100A44CC3 /* OutletTransactionTVCell.swift in Sources */,
 				C3473B231D42340100A44CC3 /* DiscountOfferAdvVC.swift in Sources */,
 				C3473B271D42340100A44CC3 /* myOutletCVCell.swift in Sources */,
+				EF20295B1D64851D00F232AC /* offerTemplateTVCell.swift in Sources */,
 				C3473B2B1D423B6600A44CC3 /* LoginVC.swift in Sources */,
 				C3473B1D1D42340100A44CC3 /* TransactionCVCell.swift in Sources */,
+				EFF272531D6322BB00DE7F91 /* managerReviewVC.swift in Sources */,
 				C3473B1A1D42340100A44CC3 /* PercentageDiscountOfferVC.swift in Sources */,
 				015B58901D52048200A53B1E /* AddMenuItemViC.swift in Sources */,
 				C3473B1F1D42340100A44CC3 /* FreebiesOfferVC.swift in Sources */,
 				FA8219F01D5B3CB800495B54 /* MenuCategoriesVC.swift in Sources */,
 				C3473B251D42340100A44CC3 /* PercentageDiscountOfferAdvVC.swift in Sources */,
 				C3473B201D42340100A44CC3 /* CombinedOfferVC.swift in Sources */,
+				EF2029551D6483A100F232AC /* offerTemplatesVC.swift in Sources */,
+				EFF272551D63237300DE7F91 /* managerReviewCVcell.swift in Sources */,
 				015B58921D521FB300A53B1E /* MenuItems1ViewController.swift in Sources */,
 				C3473B171D42340100A44CC3 /* DashBoardVC.swift in Sources */,
+				EF2029591D6484B400F232AC /* offerTemplatesCVCell.swift in Sources */,
 				C3473B221D42340100A44CC3 /* FixedRateOfferVC.swift in Sources */,
 				C3473B181D42340100A44CC3 /* DesignAnOfferVC.swift in Sources */,
 				FAB08CE51D54BEBD005965D1 /* SignUpVC.swift in Sources */,
+				EF544F671D6333130078B80A /* managerReviewTVCell.swift in Sources */,
 				C3473AF11D4233A900A44CC3 /* AppDelegate.swift in Sources */,
 				C3473B191D42340100A44CC3 /* DiscountOfferVC.swift in Sources */,
 				C3473B211D42340100A44CC3 /* BillValueOfferVC.swift in Sources */,
