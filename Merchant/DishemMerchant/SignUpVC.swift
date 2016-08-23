@@ -60,10 +60,10 @@ class SignUpVC: UIViewController {
         
         
         
-        let parameters  = ["userEmail":self.emailtxt.text!,"userPassword": self.SetPassword.text!,"userMobileNumber": self.mobno.text!,"userTypeId":0,
-        "userFirstName":"arjun","userLastName":"M","userLoggedInVia":3,
-        "userRegistrationLat":12.12417,"userRegistrationLng" :77.2124,
-        "lastLoginLat":12.12417,"lastLoginLng":77.2124]
+        let parameters  = ["userEmail":self.emailtxt.text!,"userPassword": self.SetPassword.text!,"userMobileNumber": self.mobno.text!,"userTypeId":"0",
+        "userFirstName":"arjun","userLastName":"M","userLoggedInVia":"3",
+        "userRegistrationLat":"12.12417","userRegistrationLng" :"77.2124",
+        "lastLoginLat":"12.12417","lastLoginLng":"77.2124"]
 
         
         
@@ -73,18 +73,18 @@ class SignUpVC: UIViewController {
     
     
     
-        Alamofire.request(.POST, "http://dishem.com/DishemBusiness/MerchantRegistration.php", parameters: parameters as! [String : AnyObject])
+        Alamofire.request(.POST, "http://dishem.com/DishemBusiness/MerchantRegistration.php", parameters: parameters as! [String : String])
     .responseJSON { response in
-    print(response.request)  // original URL request
-    print(response.response) // URL response
-    print(response.data)     // server data
-    print(response.result)   // result of response serialization
+ //   print(" body \(String(data: response.request!.HTTPBody!, encoding: NSUTF8StringEncoding))")  // original URL request
+ //   print(response.response) // URL response
+   // print(response.data)     // server data
+   // print(response.result)   // result of response serialization
     
     if let JSON = response.result.value {
-    print("JSON: \(JSON)")
+ //   print("JSON: \(JSON)")
     
     let Response:NSDictionary = JSON as! NSDictionary
-    print(Response)
+   // print(Response)
     
     
     
@@ -93,16 +93,17 @@ class SignUpVC: UIViewController {
     
     if(MerchantSignUpStatus.count > 0){
     
-    for index in 0...MerchantSignUpStatus.count-1{
+   // for index in 0...MerchantSignUpStatus.count-1
+ //   {
     
-   let emailMoblileExists: String = (MerchantSignUpStatus[index].objectForKey("createUserStatus") as! String)
-    print(emailMoblileExists)
+   let createUserStatus: String = (MerchantSignUpStatus[0].objectForKey("createUserStatus") as! String)
+    print(createUserStatus)
         
     //                            self.performSegueWithIdentifier("segDashboard", sender: self)
     
     
     
-  if(emailMoblileExists == "success"){
+  if(createUserStatus == "success"){
   self.performSegueWithIdentifier("otp", sender: self)
     //self.LoginSuccess = true
     //                                print(self.LoginSucces)
@@ -125,7 +126,7 @@ class SignUpVC: UIViewController {
     alertController.addAction(acceptance)
     self.presentViewController(alertController, animated: true, completion: nil)
    }
-    }
+   // }
     
     }
    }
