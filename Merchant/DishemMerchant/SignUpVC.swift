@@ -26,7 +26,7 @@ class SignUpVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+//shakey baby
         // Do any additional setup after loading the view.
         vw_signupbox.layer.cornerRadius = 10
         vw_signupbox.layer.shadowOffset = CGSizeMake(-10, 10)
