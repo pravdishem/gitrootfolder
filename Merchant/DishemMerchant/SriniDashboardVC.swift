@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class SriniDashboardVC: UIViewController {
     
@@ -39,26 +40,10 @@ class SriniDashboardVC: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-      // self.view.layoutIfNeeded()
-        
-       // removeConstraints(dashtitle)
-       // dashtitle.numberOfLines = 0
-      //  dashtitle.text = "Dashboard"
-    //    dashtitle.sizeToFit()
-    //    self.view.translatesAutoresizingMaskIntoConstraints = false
-       // removeConstraints(self.view)
-       // removeConstraints(topvw)
-    //    topvw.translatesAutoresizingMaskIntoConstraints = false
-        
-       // self.view.backgroundColor = UIColor.whiteColor()
-        
-       // print(" height1 is \(vw.bounds.height)")
-        
-      //  let screenSize: CGRect = UIScreen.mainScreen().bounds
-       // print(" sw \(screenSize.width) vh \(vw.bounds.width)")
         
         let widthConstraint = (vw.bounds.width - horGap)/(2*aspectRatio)
         let heightConstraint = (vw.bounds.height - btnHt*2 - topAndBottomMinimum*2 - btnToImgs*2 - verGap*2)/3
+     
         print("wc \(widthConstraint) hc \(heightConstraint)")
         
         if(widthConstraint < heightConstraint)
@@ -81,41 +66,16 @@ class SriniDashboardVC: UIViewController {
                                multiplier: 0.0,
                                constant: heightConstraint).active = true
         }
-        
-        
     }
-    
-//    override func viewDidAppear(animated: Bool) {
-//        super.viewDidAppear(animated)
-//        print(" height2 is \(vw.bounds.height)")
-//        
-//    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
-       // self.view.translatesAutoresizingMaskIntoConstraints = false
       
         removeConstraints(self.view,topvw,dashtitle,topimg,vw,img1,img2,img3,img4,img5,img6,btn1,btn2,btn3,btn4)
         
         maskFalse(topvw,dashtitle,topimg,vw,img1,img2,img3,img4,img5,img6,btn1,btn2,btn3,btn4)
-        
-       // removeConstraints(topvw)
-       // removeConstraints(dashtitle)
-       // removeConstraints(topimg)
-        
-      //  removeConstraints(btn)
-      //  removeConstraints(topvw)
-        
-      //  topvw.translatesAutoresizingMaskIntoConstraints = false
-       // dashtitle.translatesAutoresizingMaskIntoConstraints = false
-      //  topimg.translatesAutoresizingMaskIntoConstraints = false
-   //     btn.translatesAutoresizingMaskIntoConstraints = false
-        
-        //dashtitle.sizeToFit()
+
         
         NSLayoutConstraint(item: topvw,
                            attribute: .Leading,
@@ -545,30 +505,7 @@ class SriniDashboardVC: UIViewController {
                            attribute: .Bottom,
                            multiplier: 1.0,
                            constant: btnToImgs).active = true
-        
-        
-        
-//
-//        
-//        NSLayoutConstraint(item: dashtitle,
-//                           attribute: .Height,
-//                           relatedBy: .Equal,
-//                           toItem: nil,
-//                           attribute: .NotAnAttribute,
-//                           multiplier: 0.0,
-//                           constant: 30.0).active = true
-//        
-//        NSLayoutConstraint(item: dashtitle,
-//                           attribute: .Width,
-//                           relatedBy: .Equal,
-//                           toItem: nil,
-//                           attribute: .NotAnAttribute,
-//                           multiplier: 0.0,
-//                           constant: 70.0).active = true
-        
-   // print(" height is \(vw.bounds.height)")
-        
-        // Do any additional setup after loading the view.
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -576,16 +513,7 @@ class SriniDashboardVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+
     
     func removeConstraints(v : UIView...) {
         var list = [NSLayoutConstraint]()
