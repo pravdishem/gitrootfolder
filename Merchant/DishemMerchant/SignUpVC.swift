@@ -16,6 +16,7 @@ class SignUpVC: UIViewController {
 
     @IBAction func btnsignup(sender: AnyObject) {
       signup()
+    
     }
     @IBOutlet weak var mobno: UITextField!
     @IBOutlet weak var SetPassword: UITextField!
@@ -25,7 +26,7 @@ class SignUpVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+//shakey baby
         // Do any additional setup after loading the view.
         vw_signupbox.layer.cornerRadius = 10
         vw_signupbox.layer.shadowOffset = CGSizeMake(-10, 10)
@@ -104,7 +105,8 @@ class SignUpVC: UIViewController {
     
     
   if(createUserStatus == "success"){
-  self.performSegueWithIdentifier("otp", sender: self)
+    self.otp()
+  //self.performSegueWithIdentifier("otp", sender: self)
     //self.LoginSuccess = true
     //                                print(self.LoginSucces)
     
@@ -132,6 +134,65 @@ class SignUpVC: UIViewController {
    }
 }
 }
+    func otp()
+    {
+      let parameters  = ["userMobileNumber":self.mobno.text!,"content":"good"]
+        Alamofire.request(.POST,"http:dishem.com/DishemBusiness/Otp.php", parameters: parameters as! [String : String])
+            .responseJSON { response in
+                if let JSON = response.result.value {
+                    //   print("JSON: \(JSON)")
+                    
+                    let Response:NSDictionary = JSON as! NSDictionary
+                 //    print(Response)
+                    
+                    
+                    
+                    
+                    let sendOtpStatus:NSArray = Response.objectForKey("OTPStatus") as! NSArray
+                    
+                    if(sendOtpStatus.count > 0){
+                        
+                        // for index in 0...MerchantSignUpStatus.count-1
+                        //   {
+                        
+                        let createOtp: String = (sendOtpStatus[0].objectForKey("sendOtpStatus") as! String)
+                        print(createOtp)
+                        
+                        //                            self.performSegueWithIdentifier("segDashboard", sender: self)
+                        
+                        
+                        
+                        if(createOtp == "success"){
+                            self.performSegueWithIdentifier("otp", sender: self)
+                            //self.LoginSuccess = true
+                            //                                print(self.LoginSucces)
+                            
+                            
+                            //                            dispatch_async(dispatch_get_main_queue()){
+                            //                                if(self.LoginSucces == true){
+                            //
+                            //
+                            //
+                        }
+                            
+                        else{
+                            print ("otp failed")
+                            
+                            
+                            
+                            let alertController = UIAlertController(title: "", message: "PLEASE enter valid Mobile Number ", preferredStyle: .Alert)
+                            let acceptance = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+                            alertController.addAction(acceptance)
+                            self.presentViewController(alertController, animated: true, completion: nil)
+                        }
+                        // }
+                        
+                    }
+                }
+        }
+
+    
+    }
 
     /*
     // MARK: - Navigation
