@@ -14,7 +14,7 @@ class DashBoardVC: UIViewController {
         super.viewDidLoad()
         
         title = "Dashboard"
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.blueColor()]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.blue]
         // test comment
         // srini initial commit
 

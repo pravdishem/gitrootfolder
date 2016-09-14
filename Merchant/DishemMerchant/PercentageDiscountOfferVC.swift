@@ -28,7 +28,7 @@ class PercentageDiscountOfferVC: UIViewController {
   
     override func viewDidLoad() {
         super.viewDidLoad()
-        View2.hidden = true
+        View2.isHidden = true
 //        View3.hidden = true
 //          btnHelp.layer.cornerRadius = 7
 //        title = "Percentage DIscount Offer"
@@ -42,7 +42,7 @@ class PercentageDiscountOfferVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func btnClickPlus1(sender: AnyObject) {
+    @IBAction func btnClickPlus1(_ sender: AnyObject) {
       
         btnStatus = true
         if (btnStatus == true){
@@ -52,11 +52,11 @@ class PercentageDiscountOfferVC: UIViewController {
             expandArray.append("A")
             
             if(expandArray.count == 1){
-                View2.hidden = false
+                View2.isHidden = false
             }
             if(expandArray.count == 2){
-                View2.hidden = false
-                View3.hidden = false
+                View2.isHidden = false
+                View3.isHidden = false
                 
                 
             }
@@ -68,17 +68,17 @@ class PercentageDiscountOfferVC: UIViewController {
 
     }
 
-    @IBAction func btnClickPlus2(sender: AnyObject) {
+    @IBAction func btnClickPlus2(_ sender: AnyObject) {
       
-     View2.hidden = true
+     View2.isHidden = true
         expandArray.removeLast()
         
         
         
     }
     
-    @IBAction func btnPlusClick3(sender: AnyObject) {
-        View3.hidden = true
+    @IBAction func btnPlusClick3(_ sender: AnyObject) {
+        View3.isHidden = true
         expandArray.removeLast()
     }
         /*

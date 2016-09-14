@@ -14,7 +14,7 @@ class SignUpVC: UIViewController {
     let curLat = 12.88660
     let curLong = 77
 
-    @IBAction func btnsignup(sender: AnyObject) {
+    @IBAction func btnsignup(_ sender: AnyObject) {
       signup()
     
     }
@@ -29,7 +29,7 @@ class SignUpVC: UIViewController {
 //shakey baby
         // Do any additional setup after loading the view.
         vw_signupbox.layer.cornerRadius = 10
-        vw_signupbox.layer.shadowOffset = CGSizeMake(-10, 10)
+        vw_signupbox.layer.shadowOffset = CGSize(width: -10, height: 10)
         vw_signupbox.layer.shadowRadius = 5
         vw_signupbox.layer.shadowOpacity = 0.5
         
@@ -74,7 +74,7 @@ class SignUpVC: UIViewController {
     
     
     
-        Alamofire.request(.POST, "http://dishem.com/DishemBusiness/MerchantRegistration.php", parameters: parameters as! [String : String])
+        Alamofire.request("http://dishem.com/DishemBusiness/MerchantRegistration.php", parameters: parameters as! [String : String])
     .responseJSON { response in
  //   print(" body \(String(data: response.request!.HTTPBody!, encoding: NSUTF8StringEncoding))")  // original URL request
  //   print(response.response) // URL response
@@ -90,14 +90,14 @@ class SignUpVC: UIViewController {
     
     
     
-   let MerchantSignUpStatus:NSArray = Response.objectForKey("MerchantSignUpStatus") as! NSArray
+   let MerchantSignUpStatus:NSArray = Response.object(forKey: "MerchantSignUpStatus") as! NSArray
     
     if(MerchantSignUpStatus.count > 0){
     
    // for index in 0...MerchantSignUpStatus.count-1
  //   {
     
-   let createUserStatus: String = (MerchantSignUpStatus[0].objectForKey("createUserStatus") as! String)
+   let createUserStatus: String = ((MerchantSignUpStatus[0] as AnyObject).object(forKey: "createUserStatus") as! String)
     print(createUserStatus)
         
     //                            self.performSegueWithIdentifier("segDashboard", sender: self)
@@ -123,10 +123,10 @@ class SignUpVC: UIViewController {
     
     
     
-    let alertController = UIAlertController(title: "", message: "PLEASE enter valid data ", preferredStyle: .Alert)
-    let acceptance = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+    let alertController = UIAlertController(title: "", message: "PLEASE enter valid data ", preferredStyle: .alert)
+    let acceptance = UIAlertAction(title: "OK", style: .cancel, handler: nil)
     alertController.addAction(acceptance)
-    self.presentViewController(alertController, animated: true, completion: nil)
+    self.present(alertController, animated: true, completion: nil)
    }
    // }
     
@@ -137,7 +137,7 @@ class SignUpVC: UIViewController {
     func otp()
     {
       let parameters  = ["userMobileNumber":self.mobno.text!,"content":"good"]
-        Alamofire.request(.POST,"http:dishem.com/DishemBusiness/Otp.php", parameters: parameters as! [String : String])
+        Alamofire.request("http:dishem.com/DishemBusiness/Otp.php", parameters: parameters as! [String : String])
             .responseJSON { response in
                 if let JSON = response.result.value {
                     //   print("JSON: \(JSON)")
@@ -148,14 +148,14 @@ class SignUpVC: UIViewController {
                     
                     
                     
-                    let sendOtpStatus:NSArray = Response.objectForKey("OTPStatus") as! NSArray
+                    let sendOtpStatus:NSArray = Response.object(forKey: "OTPStatus") as! NSArray
                     
                     if(sendOtpStatus.count > 0){
                         
                         // for index in 0...MerchantSignUpStatus.count-1
                         //   {
                         
-                        let createOtp: String = (sendOtpStatus[0].objectForKey("sendOtpStatus") as! String)
+                        let createOtp: String = ((sendOtpStatus[0] as AnyObject).object(forKey: "sendOtpStatus") as! String)
                         print(createOtp)
                         
                         //                            self.performSegueWithIdentifier("segDashboard", sender: self)
@@ -163,7 +163,7 @@ class SignUpVC: UIViewController {
                         
                         
                         if(createOtp == "success"){
-                            self.performSegueWithIdentifier("otp", sender: self)
+                            self.performSegue(withIdentifier: "otp", sender: self)
                             //self.LoginSuccess = true
                             //                                print(self.LoginSucces)
                             
@@ -180,10 +180,10 @@ class SignUpVC: UIViewController {
                             
                             
                             
-                            let alertController = UIAlertController(title: "", message: "PLEASE enter valid Mobile Number ", preferredStyle: .Alert)
-                            let acceptance = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+                            let alertController = UIAlertController(title: "", message: "PLEASE enter valid Mobile Number ", preferredStyle: .alert)
+                            let acceptance = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                             alertController.addAction(acceptance)
-                            self.presentViewController(alertController, animated: true, completion: nil)
+                            self.present(alertController, animated: true, completion: nil)
                         }
                         // }
                         

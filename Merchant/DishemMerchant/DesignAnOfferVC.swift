@@ -14,7 +14,7 @@ class DesignAnOfferVC: UIViewController {
         super.viewDidLoad()
         
         title = "Design An Offer"
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.blueColor()]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.blue]
         // Do any additional setup after loading the view.
     }
 
@@ -24,34 +24,34 @@ class DesignAnOfferVC: UIViewController {
     }
     
     
-    @IBAction func btnDidNotFindTheRightOfferType(sender: AnyObject) {
+    @IBAction func btnDidNotFindTheRightOfferType(_ sender: AnyObject) {
         
-        let alertController = UIAlertController(title: "Did Not Find The Right Offer Type?\n\n\n\n\n\n", message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
+        let alertController = UIAlertController(title: "Did Not Find The Right Offer Type?\n\n\n\n\n\n", message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
         
         let margin:CGFloat = 8.0
-        let rect = CGRectMake(margin, margin*4, alertController.view.bounds.size.width - margin * 4.0, 100.0)
+        let rect = CGRect(x: margin, y: margin*4, width: alertController.view.bounds.size.width - margin * 4.0, height: 100.0)
         let customView = UITextView(frame: rect)
         
-        customView.backgroundColor = UIColor.clearColor()
+        customView.backgroundColor = UIColor.clear
         customView.font = UIFont(name: "Helvetica", size: 15)
         customView.text               = "Tell us more about the offer that you are trying to Design .."
         
         
-          customView.backgroundColor = UIColor.clearColor()
+          customView.backgroundColor = UIColor.clear
         alertController.view.addSubview(customView)
         
-        let somethingAction = UIAlertAction(title: "Send", style: UIAlertActionStyle.Default, handler: {(alert: UIAlertAction!) in print("Send")
+        let somethingAction = UIAlertAction(title: "Send", style: UIAlertActionStyle.default, handler: {(alert: UIAlertAction!) in print("Send")
             
             print(customView.text)
             
         })
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: {(alert: UIAlertAction!) in print("cancel")})
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: {(alert: UIAlertAction!) in print("cancel")})
         
         alertController.addAction(somethingAction)
         alertController.addAction(cancelAction)
         
-        self.presentViewController(alertController, animated: true, completion:{})
+        self.present(alertController, animated: true, completion:{})
     }
     
 }

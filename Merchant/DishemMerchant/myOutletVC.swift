@@ -17,7 +17,7 @@ class myOutletVC: UIViewController,UICollectionViewDelegate, UICollectionViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "My Outlet"
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.blueColor()]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.blue]
         
 
         // Do any additional setup after loading the view.
@@ -28,18 +28,18 @@ class myOutletVC: UIViewController,UICollectionViewDelegate, UICollectionViewDat
         // Dispose of any resources that can be recreated.
     }
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 1
     }
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         // get a reference to our storyboard cell
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! myOutletCVCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! myOutletCVCell
         
         
         
-        cell.btnAddOutlet.layer.setValue(indexPath.row, forKey: "index")
-        cell.btnAddOutlet.addTarget(self, action: "AddRow:", forControlEvents: UIControlEvents.TouchUpInside)
+        cell.btnAddOutlet.layer.setValue((indexPath as NSIndexPath).row, forKey: "index")
+        cell.btnAddOutlet.addTarget(self, action: #selector(myOutletVC.AddRow(_:)), for: UIControlEvents.touchUpInside)
         
         // Remove the button from the first cell
        
@@ -50,7 +50,7 @@ class myOutletVC: UIViewController,UICollectionViewDelegate, UICollectionViewDat
         
         return cell
     }
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
 //        myselectedRow = ( "(\(indexPath.row)") as String
 //        tvOutletTransactions.reloadData()
@@ -58,7 +58,7 @@ class myOutletVC: UIViewController,UICollectionViewDelegate, UICollectionViewDat
 //        print("You selected cell #\(indexPath.item)!")
     }
     
-    func AddRow(sender:UIButton) {
+    func AddRow(_ sender:UIButton) {
         
        print("button action sikatu")
     }

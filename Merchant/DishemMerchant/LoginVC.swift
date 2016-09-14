@@ -26,7 +26,7 @@ class LoginVC: UIViewController {
     
     
     //Forgot Password
-    @IBAction func btnForgot_click(sender: AnyObject) {
+    @IBAction func btnForgot_click(_ sender: AnyObject) {
         
         let txt = alert.addTextField("Email Id")
         alert.showEdit("Forgot Password", subTitle: "Please enter your email id")
@@ -34,7 +34,7 @@ class LoginVC: UIViewController {
     }
     //hiiii
     //Login Button Click
-    @IBAction func btnClick_getstarted(sender: AnyObject) {
+    @IBAction func btnClick_getstarted(_ sender: AnyObject) {
         if(validateInput())
         {
             Login()
@@ -44,18 +44,18 @@ class LoginVC: UIViewController {
     func validateInput() -> Bool {
         if(Username.text == "" || Password.text == "")
         {
-            lblMessage.hidden = false
+            lblMessage.isHidden = false
             return false
         }
         else
         {
-            lblMessage.hidden = true
+            lblMessage.isHidden = true
             return true
         }
     }
 
-    @IBAction func btnsignup(sender: AnyObject) {
-        self.performSegueWithIdentifier("signup", sender: self)
+    @IBAction func btnsignup(_ sender: AnyObject) {
+        self.performSegue(withIdentifier: "signup", sender: self)
     }
 
     @IBOutlet weak var vw_loginbox: UIView!
@@ -66,7 +66,7 @@ class LoginVC: UIViewController {
         
         //To give shadow behind the loginbox
         vw_loginbox.layer.cornerRadius = 10
-        vw_loginbox.layer.shadowOffset = CGSizeMake(-10, 10)
+        vw_loginbox.layer.shadowOffset = CGSize(width: -10, height: 10)
         vw_loginbox.layer.shadowRadius = 5
         vw_loginbox.layer.shadowOpacity = 0.5
     }
@@ -80,11 +80,12 @@ class LoginVC: UIViewController {
     
     func Login(){
         
-        let parameters = ["userEmail": self.Username.text, "userPassword": self.Password.text , "lastLoginLat": "\(curLat)", "lastLoginLng": "\(curLong)"]
+        let parameters = ["userEmail": self.Username.text!, "userPassword": self.Password.text! , "lastLoginLat": "\(curLat)", "lastLoginLng": "\(curLong)"] as [String : String]
         
         
         
-        Alamofire.request(.POST, "http://dishem.com/DishemBusiness/MerchantLogin.php", parameters: parameters as! [String : String])
+        
+        Alamofire.request("http://dishem.com/DishemBusiness/MerchantLogin.php", parameters : parameters)
             .responseJSON { response in
                 print(response.request)  // original URL request
                 print(response.response) // URL response
@@ -100,13 +101,13 @@ class LoginVC: UIViewController {
                     
                     
                     
-                    let MerchantLoginStatus:NSArray = Response.objectForKey("MerchantLoginStatus") as! NSArray
+                    let MerchantLoginStatus:NSArray = Response.object(forKey: "MerchantLoginStatus") as! NSArray
                     
                     if(MerchantLoginStatus.count > 0){
                         
                         for index in 0...MerchantLoginStatus.count-1{
                             
-                            let loginStatus: String = MerchantLoginStatus[index].objectForKey("loginStatus") as! String
+                            let loginStatus: String = (MerchantLoginStatus[index] as AnyObject).object(forKey: "loginStatus") as! String
                             
                             
                             print(loginStatus)
@@ -115,7 +116,7 @@ class LoginVC: UIViewController {
                             
                             
                             if(loginStatus == "success"){
-                                self.performSegueWithIdentifier("segDashboard", sender: self)
+                                self.performSegue(withIdentifier: "segDashboard", sender: self)
                                 self.LoginSucces = true
                                 //                                print(self.LoginSucces)
                             }
@@ -132,10 +133,10 @@ class LoginVC: UIViewController {
                                 
                                 
                                 
-                                let alertController = UIAlertController(title: "", message: "You Have Entered An Incorrect Password, Please Enter Your Correct Username and Password  ", preferredStyle: .Alert)
-                                let acceptance = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+                                let alertController = UIAlertController(title: "", message: "You Have Entered An Incorrect Password, Please Enter Your Correct Username and Password  ", preferredStyle: .alert)
+                                let acceptance = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                                 alertController.addAction(acceptance)
-                                self.presentViewController(alertController, animated: true, completion: nil)
+                                self.present(alertController, animated: true, completion: nil)
                             }
                         }
                         

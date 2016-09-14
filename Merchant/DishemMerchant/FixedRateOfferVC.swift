@@ -14,7 +14,7 @@ class FixedRateOfferVC: UIViewController {
         super.viewDidLoad()
         
         title = "Fixed Rate Offer"
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.blueColor()]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.blue]
         // Do any additional setup after loading the view.
     }
 

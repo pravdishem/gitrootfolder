@@ -15,7 +15,7 @@ class DiscountOfferAdvVC: UIViewController {
 
         
         title = "Discount Offer(Simple)"
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.blueColor()]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.blue]
         // Do any additional setup after loading the view.
     }
 

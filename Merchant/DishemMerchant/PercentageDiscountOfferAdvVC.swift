@@ -14,7 +14,7 @@ class PercentageDiscountOfferAdvVC: UIViewController {
         super.viewDidLoad()
         
         title = "Freebies Offer"
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.blueColor()]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.blue]
         // Do any additional setup after loading the view.
     }
 

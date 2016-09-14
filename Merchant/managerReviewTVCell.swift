@@ -18,11 +18,11 @@ class managerReviewTVCell: UITableViewCell {
     
     var isChecked: Bool = false
     
-    @IBAction func publishclick(sender: AnyObject) {
+    @IBAction func publishclick(_ sender: AnyObject) {
             if (isChecked == false){
             
             //let img = UIImage(named: "uncheck11")
-            publishbtn.setBackgroundImage(checkedImage, forState: .Normal)
+            publishbtn.setBackgroundImage(checkedImage, for: UIControlState())
             
             
             isChecked = true
@@ -31,7 +31,7 @@ class managerReviewTVCell: UITableViewCell {
             
             // image1 = UIImageView(image: uncheckedImage)
             //let img = UIImage(checkedImage: "check11")
-            publishbtn.setBackgroundImage(uncheckedImage, forState: .Normal)
+            publishbtn.setBackgroundImage(uncheckedImage, for: UIControlState())
             isChecked = false
             
             
@@ -39,12 +39,12 @@ class managerReviewTVCell: UITableViewCell {
         
         
     }
-    @IBAction func designclicked(sender: AnyObject) {
+    @IBAction func designclicked(_ sender: AnyObject) {
         
         if (isChecked == false){
             
             //let img = UIImage(named: "uncheck11")
-            designbtn.setBackgroundImage(checkedImage, forState: .Normal)
+            designbtn.setBackgroundImage(checkedImage, for: UIControlState())
             
             
             isChecked = true
@@ -53,7 +53,7 @@ class managerReviewTVCell: UITableViewCell {
             
             // image1 = UIImageView(image: uncheckedImage)
             //let img = UIImage(checkedImage: "check11")
-            designbtn.setBackgroundImage(uncheckedImage, forState: .Normal)
+            designbtn.setBackgroundImage(uncheckedImage, for: UIControlState())
             isChecked = false
             
             
@@ -65,7 +65,7 @@ class managerReviewTVCell: UITableViewCell {
         // Initialization code
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state

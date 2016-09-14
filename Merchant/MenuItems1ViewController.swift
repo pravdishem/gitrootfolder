@@ -17,7 +17,7 @@ class MenuItems1ViewController: UIViewController {
         
         
         self.MD.layer.borderWidth = 1
-        self.MD.layer.borderColor = UIColor(red:222/255.0, green:225/255.0, blue:227/255.0, alpha: 1.0).CGColor
+        self.MD.layer.borderColor = UIColor(red:222/255.0, green:225/255.0, blue:227/255.0, alpha: 1.0).cgColor
         // Do any additional setup after loading the view.
     }
 

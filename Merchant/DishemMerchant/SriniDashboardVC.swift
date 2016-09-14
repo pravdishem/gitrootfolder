@@ -38,7 +38,7 @@ class SriniDashboardVC: UIViewController {
     let btnHt : CGFloat = 30.0
     let topVwHt : CGFloat = 50.0
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         let widthConstraint = (vw.bounds.width - horGap)/(2*aspectRatio)
@@ -49,22 +49,22 @@ class SriniDashboardVC: UIViewController {
         if(widthConstraint < heightConstraint)
         {
             NSLayoutConstraint(item: img1,
-                               attribute: .Width,
-                               relatedBy: .Equal,
+                               attribute: .width,
+                               relatedBy: .equal,
                                toItem: nil,
-                               attribute: .NotAnAttribute,
+                               attribute: .notAnAttribute,
                                multiplier: 0.0,
-                               constant: widthConstraint*aspectRatio).active = true
+                               constant: widthConstraint*aspectRatio).isActive = true
         }
         else
         {
             NSLayoutConstraint(item: img1,
-                               attribute: .Height,
-                               relatedBy: .Equal,
+                               attribute: .height,
+                               relatedBy: .equal,
                                toItem: nil,
-                               attribute: .NotAnAttribute,
+                               attribute: .notAnAttribute,
                                multiplier: 0.0,
-                               constant: heightConstraint).active = true
+                               constant: heightConstraint).isActive = true
         }
     }
     
@@ -78,433 +78,433 @@ class SriniDashboardVC: UIViewController {
 
         
         NSLayoutConstraint(item: topvw,
-                           attribute: .Leading,
-                           relatedBy: .Equal,
+                           attribute: .leading,
+                           relatedBy: .equal,
                            toItem: self.view,
-                           attribute: .Leading,
+                           attribute: .leading,
                            multiplier: 1.0,
-                           constant: 0.0).active = true
+                           constant: 0.0).isActive = true
         
         NSLayoutConstraint(item: topvw,
-                           attribute: .Trailing,
-                           relatedBy: .Equal,
+                           attribute: .trailing,
+                           relatedBy: .equal,
                            toItem: self.view,
-                           attribute: .Trailing,
+                           attribute: .trailing,
                            multiplier: 1.0,
-                           constant: 0.0).active = true
+                           constant: 0.0).isActive = true
         
         NSLayoutConstraint(item: topvw,
-                           attribute: .Height,
-                           relatedBy: .Equal,
+                           attribute: .height,
+                           relatedBy: .equal,
                            toItem: nil,
-                           attribute: .NotAnAttribute,
+                           attribute: .notAnAttribute,
                            multiplier: 0.0,
-                           constant: topVwHt).active = true
+                           constant: topVwHt).isActive = true
         
         NSLayoutConstraint(item: topvw,
-                           attribute: .Top,
-                           relatedBy: .Equal,
+                           attribute: .top,
+                           relatedBy: .equal,
                            toItem: self.view,
-                           attribute: .Top,
+                           attribute: .top,
                            multiplier: 1.0,
-                           constant: 0.0).active = true
+                           constant: 0.0).isActive = true
         
         NSLayoutConstraint(item: dashtitle,
-                           attribute: .CenterX,
-                           relatedBy: .Equal,
+                           attribute: .centerX,
+                           relatedBy: .equal,
                            toItem: topvw,
-                           attribute: .CenterX,
+                           attribute: .centerX,
                            multiplier: 1.0,
-                           constant: 0.0).active = true
+                           constant: 0.0).isActive = true
         
         NSLayoutConstraint(item: dashtitle,
-                           attribute: .CenterY,
-                           relatedBy: .Equal,
+                           attribute: .centerY,
+                           relatedBy: .equal,
                            toItem: topvw,
-                           attribute: .CenterY,
+                           attribute: .centerY,
                            multiplier: 1.0,
-                           constant: 8.0).active = true
+                           constant: 8.0).isActive = true
         
         
         NSLayoutConstraint(item: topimg,
-                           attribute: .Height,
-                           relatedBy: .Equal,
+                           attribute: .height,
+                           relatedBy: .equal,
                            toItem: nil,
-                           attribute: .NotAnAttribute,
+                           attribute: .notAnAttribute,
                            multiplier: 0.0,
-                           constant: 25.0).active = true
+                           constant: 25.0).isActive = true
         
         NSLayoutConstraint(item: topimg,
-                           attribute: .Width,
-                           relatedBy: .Equal,
+                           attribute: .width,
+                           relatedBy: .equal,
                            toItem: nil,
-                           attribute: .NotAnAttribute,
+                           attribute: .notAnAttribute,
                            multiplier: 0.0,
-                           constant: 25.0).active = true
+                           constant: 25.0).isActive = true
         
         NSLayoutConstraint(item: topimg,
-                           attribute: .Trailing,
-                           relatedBy: .Equal,
+                           attribute: .trailing,
+                           relatedBy: .equal,
                            toItem: topvw,
-                           attribute: .Trailing,
+                           attribute: .trailing,
                            multiplier: 1.0,
-                           constant: -10.0).active = true
+                           constant: -10.0).isActive = true
         
         NSLayoutConstraint(item: topimg,
-                           attribute: .CenterY,
-                           relatedBy: .Equal,
+                           attribute: .centerY,
+                           relatedBy: .equal,
                            toItem: topvw,
-                           attribute: .CenterY,
+                           attribute: .centerY,
                            multiplier: 1.0,
-                           constant: 8.0).active = true
+                           constant: 8.0).isActive = true
         
         
         NSLayoutConstraint(item: vw,
-                           attribute: .Leading,
-                           relatedBy: .Equal,
+                           attribute: .leading,
+                           relatedBy: .equal,
                            toItem: self.view,
-                           attribute: .Leading,
+                           attribute: .leading,
                            multiplier: 1.0,
-                           constant: 10.0).active = true
+                           constant: 10.0).isActive = true
         
         NSLayoutConstraint(item: vw,
-                           attribute: .Trailing,
-                           relatedBy: .Equal,
+                           attribute: .trailing,
+                           relatedBy: .equal,
                            toItem: self.view,
-                           attribute: .Trailing,
+                           attribute: .trailing,
                            multiplier: 1.0,
-                           constant: -10.0).active = true
+                           constant: -10.0).isActive = true
         
         NSLayoutConstraint(item: vw,
-                           attribute: .Top,
-                           relatedBy: .Equal,
+                           attribute: .top,
+                           relatedBy: .equal,
                            toItem: topvw,
-                           attribute: .Bottom,
+                           attribute: .bottom,
                            multiplier: 1.0,
-                           constant: 0.0).active = true
+                           constant: 0.0).isActive = true
         
         NSLayoutConstraint(item: vw,
-                           attribute: .Bottom,
-                           relatedBy: .Equal,
+                           attribute: .bottom,
+                           relatedBy: .equal,
                            toItem: self.view,
-                           attribute: .Bottom,
+                           attribute: .bottom,
                            multiplier: 1.0,
-                           constant: 0.0).active = true
+                           constant: 0.0).isActive = true
         
         NSLayoutConstraint(item: img1,
-                           attribute: .Width,
-                           relatedBy: .Equal,
+                           attribute: .width,
+                           relatedBy: .equal,
                            toItem: img1,
-                           attribute: .Height,
+                           attribute: .height,
                            multiplier: aspectRatio,
-                           constant: 0.0).active = true
+                           constant: 0.0).isActive = true
         
         NSLayoutConstraint(item: img2,
-                           attribute: .Width,
-                           relatedBy: .Equal,
+                           attribute: .width,
+                           relatedBy: .equal,
                            toItem: img2,
-                           attribute: .Height,
+                           attribute: .height,
                            multiplier: aspectRatio,
-                           constant: 0.0).active = true
+                           constant: 0.0).isActive = true
         
         NSLayoutConstraint(item: img3,
-                           attribute: .Width,
-                           relatedBy: .Equal,
+                           attribute: .width,
+                           relatedBy: .equal,
                            toItem: img3,
-                           attribute: .Height,
+                           attribute: .height,
                            multiplier: aspectRatio,
-                           constant: 0.0).active = true
+                           constant: 0.0).isActive = true
         
         NSLayoutConstraint(item: img4,
-                           attribute: .Width,
-                           relatedBy: .Equal,
+                           attribute: .width,
+                           relatedBy: .equal,
                            toItem: img4,
-                           attribute: .Height,
+                           attribute: .height,
                            multiplier: aspectRatio,
-                           constant: 0.0).active = true
+                           constant: 0.0).isActive = true
       
         NSLayoutConstraint(item: img5,
-                           attribute: .Width,
-                           relatedBy: .Equal,
+                           attribute: .width,
+                           relatedBy: .equal,
                            toItem: img5,
-                           attribute: .Height,
+                           attribute: .height,
                            multiplier: aspectRatio,
-                           constant: 0.0).active = true
+                           constant: 0.0).isActive = true
       
         NSLayoutConstraint(item: img6,
-                           attribute: .Width,
-                           relatedBy: .Equal,
+                           attribute: .width,
+                           relatedBy: .equal,
                            toItem: img6,
-                           attribute: .Height,
+                           attribute: .height,
                            multiplier: aspectRatio,
-                           constant: 0.0).active = true
+                           constant: 0.0).isActive = true
         
         
         NSLayoutConstraint(item: img1,
-                           attribute: .Trailing,
-                           relatedBy: .Equal,
+                           attribute: .trailing,
+                           relatedBy: .equal,
                            toItem: img3,
-                           attribute: .Trailing,
+                           attribute: .trailing,
                            multiplier: 1.0,
-                           constant: 0.0).active = true
+                           constant: 0.0).isActive = true
         
         NSLayoutConstraint(item: img1,
-                           attribute: .Trailing,
-                           relatedBy: .Equal,
+                           attribute: .trailing,
+                           relatedBy: .equal,
                            toItem: img5,
-                           attribute: .Trailing,
+                           attribute: .trailing,
                            multiplier: 1.0,
-                           constant: 0.0).active = true
+                           constant: 0.0).isActive = true
         
         NSLayoutConstraint(item: img2,
-                           attribute: .Leading,
-                           relatedBy: .Equal,
+                           attribute: .leading,
+                           relatedBy: .equal,
                            toItem: img4,
-                           attribute: .Leading,
+                           attribute: .leading,
                            multiplier: 1.0,
-                           constant: 0.0).active = true
+                           constant: 0.0).isActive = true
         
         NSLayoutConstraint(item: img2,
-                           attribute: .Leading,
-                           relatedBy: .Equal,
+                           attribute: .leading,
+                           relatedBy: .equal,
                            toItem: img6,
-                           attribute: .Leading,
+                           attribute: .leading,
                            multiplier: 1.0,
-                           constant: 0.0).active = true
+                           constant: 0.0).isActive = true
       
         NSLayoutConstraint(item: img1,
-                           attribute: .Top,
-                           relatedBy: .Equal,
+                           attribute: .top,
+                           relatedBy: .equal,
                            toItem: img2,
-                           attribute: .Top,
+                           attribute: .top,
                            multiplier: 1.0,
-                           constant: 0.0).active = true
+                           constant: 0.0).isActive = true
         
         NSLayoutConstraint(item: img3,
-                           attribute: .Top,
-                           relatedBy: .Equal,
+                           attribute: .top,
+                           relatedBy: .equal,
                            toItem: img4,
-                           attribute: .Top,
+                           attribute: .top,
                            multiplier: 1.0,
-                           constant: 0.0).active = true
+                           constant: 0.0).isActive = true
         
         NSLayoutConstraint(item: img5,
-                           attribute: .Top,
-                           relatedBy: .Equal,
+                           attribute: .top,
+                           relatedBy: .equal,
                            toItem: img6,
-                           attribute: .Top,
+                           attribute: .top,
                            multiplier: 1.0,
-                           constant: 0.0).active = true
+                           constant: 0.0).isActive = true
         
         
         NSLayoutConstraint(item: img3,
-                           attribute: .CenterY,
-                           relatedBy: .Equal,
+                           attribute: .centerY,
+                           relatedBy: .equal,
                            toItem: vw,
-                           attribute: .CenterY,
+                           attribute: .centerY,
                            multiplier: 1.0,
-                           constant: 0.0).active = true
+                           constant: 0.0).isActive = true
         
         
         NSLayoutConstraint(item: img1,
-                           attribute: .Bottom,
-                           relatedBy: .Equal,
+                           attribute: .bottom,
+                           relatedBy: .equal,
                            toItem: img3,
-                           attribute: .Top,
+                           attribute: .top,
                            multiplier: 1.0,
-                           constant: -(verGap)).active = true
+                           constant: -(verGap)).isActive = true
         
         NSLayoutConstraint(item: img5,
-                           attribute: .Top,
-                           relatedBy: .Equal,
+                           attribute: .top,
+                           relatedBy: .equal,
                            toItem: img3,
-                           attribute: .Bottom,
+                           attribute: .bottom,
                            multiplier: 1.0,
-                           constant: verGap).active = true
+                           constant: verGap).isActive = true
         
         NSLayoutConstraint(item: img1,
-                           attribute: .Trailing,
-                           relatedBy: .Equal,
+                           attribute: .trailing,
+                           relatedBy: .equal,
                            toItem: vw,
-                           attribute: .CenterX,
+                           attribute: .centerX,
                            multiplier: 1.0,
-                           constant: -(horGap/2)).active = true
+                           constant: -(horGap/2)).isActive = true
         
         NSLayoutConstraint(item: img2,
-                           attribute: .Leading,
-                           relatedBy: .Equal,
+                           attribute: .leading,
+                           relatedBy: .equal,
                            toItem: vw,
-                           attribute: .CenterX,
+                           attribute: .centerX,
                            multiplier: 1.0,
-                           constant: horGap/2).active = true
+                           constant: horGap/2).isActive = true
         
         NSLayoutConstraint(item: img1,
-                           attribute: .Width,
-                           relatedBy: .Equal,
+                           attribute: .width,
+                           relatedBy: .equal,
                            toItem: img2,
-                           attribute: .Width,
+                           attribute: .width,
                            multiplier: 1.0,
-                           constant: 0.0).active = true
+                           constant: 0.0).isActive = true
         
         NSLayoutConstraint(item: img1,
-                           attribute: .Width,
-                           relatedBy: .Equal,
+                           attribute: .width,
+                           relatedBy: .equal,
                            toItem: img3,
-                           attribute: .Width,
+                           attribute: .width,
                            multiplier: 1.0,
-                           constant: 0.0).active = true
+                           constant: 0.0).isActive = true
         
         NSLayoutConstraint(item: img1,
-                           attribute: .Width,
-                           relatedBy: .Equal,
+                           attribute: .width,
+                           relatedBy: .equal,
                            toItem: img4,
-                           attribute: .Width,
+                           attribute: .width,
                            multiplier: 1.0,
-                           constant: 0.0).active = true
+                           constant: 0.0).isActive = true
         
         NSLayoutConstraint(item: img1,
-                           attribute: .Width,
-                           relatedBy: .Equal,
+                           attribute: .width,
+                           relatedBy: .equal,
                            toItem: img5,
-                           attribute: .Width,
+                           attribute: .width,
                            multiplier: 1.0,
-                           constant: 0.0).active = true
+                           constant: 0.0).isActive = true
         
         NSLayoutConstraint(item: img1,
-                           attribute: .Width,
-                           relatedBy: .Equal,
+                           attribute: .width,
+                           relatedBy: .equal,
                            toItem: img6,
-                           attribute: .Width,
+                           attribute: .width,
                            multiplier: 1.0,
-                           constant: 0.0).active = true
+                           constant: 0.0).isActive = true
      
         NSLayoutConstraint(item: btn1,
-                           attribute: .Leading,
-                           relatedBy: .Equal,
+                           attribute: .leading,
+                           relatedBy: .equal,
                            toItem: img1,
-                           attribute: .Leading,
+                           attribute: .leading,
                            multiplier: 1.0,
-                           constant: 0.0).active = true
+                           constant: 0.0).isActive = true
         
         NSLayoutConstraint(item: btn1,
-                           attribute: .Trailing,
-                           relatedBy: .Equal,
+                           attribute: .trailing,
+                           relatedBy: .equal,
                            toItem: vw,
-                           attribute: .CenterX,
+                           attribute: .centerX,
                            multiplier: 1.0,
-                           constant: -(horGap)).active = true
+                           constant: -(horGap)).isActive = true
         
         NSLayoutConstraint(item: btn2,
-                           attribute: .Leading,
-                           relatedBy: .Equal,
+                           attribute: .leading,
+                           relatedBy: .equal,
                            toItem: vw,
-                           attribute: .CenterX,
+                           attribute: .centerX,
                            multiplier: 1.0,
-                           constant: horGap).active = true
+                           constant: horGap).isActive = true
         
         NSLayoutConstraint(item: btn2,
-                           attribute: .Trailing,
-                           relatedBy: .Equal,
+                           attribute: .trailing,
+                           relatedBy: .equal,
                            toItem: img2,
-                           attribute: .Trailing,
+                           attribute: .trailing,
                            multiplier: 1.0,
-                           constant: 0.0).active = true
+                           constant: 0.0).isActive = true
         
         NSLayoutConstraint(item: btn3,
-                           attribute: .Leading,
-                           relatedBy: .Equal,
+                           attribute: .leading,
+                           relatedBy: .equal,
                            toItem: img5,
-                           attribute: .Leading,
+                           attribute: .leading,
                            multiplier: 1.0,
-                           constant: 0.0).active = true
+                           constant: 0.0).isActive = true
         
         NSLayoutConstraint(item: btn3,
-                           attribute: .Trailing,
-                           relatedBy: .Equal,
+                           attribute: .trailing,
+                           relatedBy: .equal,
                            toItem: vw,
-                           attribute: .CenterX,
+                           attribute: .centerX,
                            multiplier: 1.0,
-                           constant: -(horGap)).active = true
+                           constant: -(horGap)).isActive = true
         
         NSLayoutConstraint(item: btn4,
-                           attribute: .Leading,
-                           relatedBy: .Equal,
+                           attribute: .leading,
+                           relatedBy: .equal,
                            toItem: vw,
-                           attribute: .CenterX,
+                           attribute: .centerX,
                            multiplier: 1.0,
-                           constant: horGap).active = true
+                           constant: horGap).isActive = true
         
         NSLayoutConstraint(item: btn4,
-                           attribute: .Trailing,
-                           relatedBy: .Equal,
+                           attribute: .trailing,
+                           relatedBy: .equal,
                            toItem: img6,
-                           attribute: .Trailing,
+                           attribute: .trailing,
                            multiplier: 1.0,
-                           constant: 0.0).active = true
+                           constant: 0.0).isActive = true
         
         NSLayoutConstraint(item: btn1,
-                           attribute: .Height,
-                           relatedBy: .Equal,
+                           attribute: .height,
+                           relatedBy: .equal,
                            toItem: nil,
-                           attribute: .NotAnAttribute,
+                           attribute: .notAnAttribute,
                            multiplier: 0.0,
-                           constant: btnHt).active = true
+                           constant: btnHt).isActive = true
         
         NSLayoutConstraint(item: btn2,
-                           attribute: .Height,
-                           relatedBy: .Equal,
+                           attribute: .height,
+                           relatedBy: .equal,
                            toItem: nil,
-                           attribute: .NotAnAttribute,
+                           attribute: .notAnAttribute,
                            multiplier: 0.0,
-                           constant: btnHt).active = true
+                           constant: btnHt).isActive = true
         
         NSLayoutConstraint(item: btn3,
-                           attribute: .Height,
-                           relatedBy: .Equal,
+                           attribute: .height,
+                           relatedBy: .equal,
                            toItem: nil,
-                           attribute: .NotAnAttribute,
+                           attribute: .notAnAttribute,
                            multiplier: 0.0,
-                           constant: btnHt).active = true
+                           constant: btnHt).isActive = true
         
         NSLayoutConstraint(item: btn4,
-                           attribute: .Height,
-                           relatedBy: .Equal,
+                           attribute: .height,
+                           relatedBy: .equal,
                            toItem: nil,
-                           attribute: .NotAnAttribute,
+                           attribute: .notAnAttribute,
                            multiplier: 0.0,
-                           constant: btnHt).active = true
+                           constant: btnHt).isActive = true
         
         NSLayoutConstraint(item: btn1,
-                           attribute: .Bottom,
-                           relatedBy: .Equal,
+                           attribute: .bottom,
+                           relatedBy: .equal,
                            toItem: img1,
-                           attribute: .Top,
+                           attribute: .top,
                            multiplier: 1.0,
-                           constant: -(btnToImgs)).active = true
+                           constant: -(btnToImgs)).isActive = true
         
         NSLayoutConstraint(item: btn2,
-                           attribute: .Bottom,
-                           relatedBy: .Equal,
+                           attribute: .bottom,
+                           relatedBy: .equal,
                            toItem: img1,
-                           attribute: .Top,
+                           attribute: .top,
                            multiplier: 1.0,
-                           constant: -(btnToImgs)).active = true
+                           constant: -(btnToImgs)).isActive = true
         
         NSLayoutConstraint(item: btn3,
-                           attribute: .Top,
-                           relatedBy: .Equal,
+                           attribute: .top,
+                           relatedBy: .equal,
                            toItem: img5,
-                           attribute: .Bottom,
+                           attribute: .bottom,
                            multiplier: 1.0,
-                           constant: btnToImgs).active = true
+                           constant: btnToImgs).isActive = true
         
         NSLayoutConstraint(item: btn4,
-                           attribute: .Top,
-                           relatedBy: .Equal,
+                           attribute: .top,
+                           relatedBy: .equal,
                            toItem: img5,
-                           attribute: .Bottom,
+                           attribute: .bottom,
                            multiplier: 1.0,
-                           constant: btnToImgs).active = true
+                           constant: btnToImgs).isActive = true
 
     }
     
@@ -515,7 +515,7 @@ class SriniDashboardVC: UIViewController {
     
 
     
-    func removeConstraints(v : UIView...) {
+    func removeConstraints(_ v : UIView...) {
         var list = [NSLayoutConstraint]()
         for vi in v
         {
@@ -527,7 +527,7 @@ class SriniDashboardVC: UIViewController {
         }
     }
     
-    func maskFalse(v : UIView...)
+    func maskFalse(_ v : UIView...)
     {
         for vi in v
         {

@@ -7,6 +7,17 @@
 //
 
 import UIKit
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l < r
+  case (nil, _?):
+    return true
+  default:
+    return false
+  }
+}
+
 
 class TransactionsVC: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate,UITableViewDelegate,UITableViewDataSource {
     
@@ -32,11 +43,11 @@ class TransactionsVC: UIViewController,UICollectionViewDataSource,UICollectionVi
         setTabBarVisible(!tabBarIsVisible(), animated: true)
         
         title = "Transactions"
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.blueColor()]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.blue]
         
       dishemColors = [ color1, color2, color3, color4, color5, color6]
         
-        self.cvOutletName.pagingEnabled = true
+        self.cvOutletName.isPagingEnabled = true
   
         
         //cvOutletName.layer.backgroundColor = UIColor (red: 80.0/255.0, green: 80.0/255.0, blue: 167/255.0, alpha: 1.0).CGColor
@@ -46,7 +57,7 @@ class TransactionsVC: UIViewController,UICollectionViewDataSource,UICollectionVi
         // Do any additional setup after loading the view.
     }
     
-    func setTabBarVisible(visible:Bool, animated:Bool) {
+    func setTabBarVisible(_ visible:Bool, animated:Bool) {
         
         //* This cannot be called before viewDidLayoutSubviews(), because the frame is not set before this time
         
@@ -59,74 +70,74 @@ class TransactionsVC: UIViewController,UICollectionViewDataSource,UICollectionVi
         let offsetY = (visible ? -height! : height)
         
         // zero duration means no animation
-        let duration:NSTimeInterval = (animated ? 0.3 : 0.0)
+        let duration:TimeInterval = (animated ? 0.3 : 0.0)
         
         //  animate the tabBar
         if frame != nil {
-            UIView.animateWithDuration(duration) {
-                self.tabBarController?.tabBar.frame = CGRectOffset(frame!, 0, offsetY!)
+            UIView.animate(withDuration: duration, animations: {
+                self.tabBarController?.tabBar.frame = frame!.offsetBy(dx: 0, dy: offsetY!)
                 return
-            }
+            }) 
         }
     }
     
     func tabBarIsVisible() ->Bool {
-        return self.tabBarController?.tabBar.frame.origin.y < CGRectGetMaxY(self.view.frame)
+        return self.tabBarController?.tabBar.frame.origin.y < self.view.frame.maxY
     }
     
     // Call the function from tap gesture recognizer added to your view (or button)
     
-    @IBAction func tapped(sender: AnyObject) {
+    @IBAction func tapped(_ sender: AnyObject) {
         setTabBarVisible(!tabBarIsVisible(), animated: true)
     }
 
     
     
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.items.count
     }
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         // get a reference to our storyboard cell
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! TransactionCVCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! TransactionCVCell
         
-        cell.lblOutletName.text = self.items[indexPath.row]
-        cell.backgroundColor = dishemColors[(indexPath.row) % 6]
+        cell.lblOutletName.text = self.items[(indexPath as NSIndexPath).row]
+        cell.backgroundColor = dishemColors[((indexPath as NSIndexPath).row) % 6]
             
            // UIColor(red: 80.0/255.0, green: 80.0/255.0, blue: 167/255.0, alpha: 1.0).CGColor
         
         return cell
     }
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        myselectedRow = ( "(\(indexPath.row)") as String
+        myselectedRow = ( "(\((indexPath as NSIndexPath).row)") as String as NSString
     tvOutletTransactions.reloadData()
         // handle tap events
-        print("You selected cell #\(indexPath.item)!")
+        print("You selected cell #\((indexPath as NSIndexPath).item)!")
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return offerTitle.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! OutletTransactionTVCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! OutletTransactionTVCell
         
         
         
         
-        cell.lblOfferTitle?.text = offerTitle[indexPath.row]
+        cell.lblOfferTitle?.text = offerTitle[(indexPath as NSIndexPath).row]
         
         
         
-        if cell.selected
+        if cell.isSelected
         {
-            cell.accessoryType = UITableViewCellAccessoryType.Checkmark
+            cell.accessoryType = UITableViewCellAccessoryType.checkmark
         }
         else
         {
-            cell.accessoryType = UITableViewCellAccessoryType.None
+            cell.accessoryType = UITableViewCellAccessoryType.none
         }
         
         
@@ -135,13 +146,13 @@ class TransactionsVC: UIViewController,UICollectionViewDataSource,UICollectionVi
         return cell
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
-        let cell = tableView.cellForRowAtIndexPath(indexPath) as! OutletTransactionTVCell
+        let cell = tableView.cellForRow(at: indexPath) as! OutletTransactionTVCell
         
-        if cell.selected == true
+        if cell.isSelected == true
         {
-            cell.accessoryType = UITableViewCellAccessoryType.Checkmark
+            cell.accessoryType = UITableViewCellAccessoryType.checkmark
             
             
             
@@ -156,12 +167,12 @@ class TransactionsVC: UIViewController,UICollectionViewDataSource,UICollectionVi
         }
         else
         {
-            cell.accessoryType = UITableViewCellAccessoryType.None
+            cell.accessoryType = UITableViewCellAccessoryType.none
             
             
             
             
-            selectedOffersTitle = selectedOffersTitle.filter {$0 != offerTitle[indexPath.row]}
+            selectedOffersTitle = selectedOffersTitle.filter {$0 != offerTitle[(indexPath as NSIndexPath).row]}
             print(selectedOffersTitle)
             
             
@@ -171,12 +182,12 @@ class TransactionsVC: UIViewController,UICollectionViewDataSource,UICollectionVi
         
     }
     
-    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        let cell = tableView.cellForRowAtIndexPath(indexPath)
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
         
-        if cell!.selected == true
+        if cell!.isSelected == true
         {
-            cell!.accessoryType = UITableViewCellAccessoryType.Checkmark
+            cell!.accessoryType = UITableViewCellAccessoryType.checkmark
             
             selectedOffersTitle.append((cell?.textLabel?.text)!)
             print(selectedOffersTitle)
@@ -184,10 +195,10 @@ class TransactionsVC: UIViewController,UICollectionViewDataSource,UICollectionVi
         }
         else
         {
-            cell!.accessoryType = UITableViewCellAccessoryType.None
+            cell!.accessoryType = UITableViewCellAccessoryType.none
             
             
-            selectedOffersTitle = selectedOffersTitle.filter {$0 != offerTitle[indexPath.row]}
+            selectedOffersTitle = selectedOffersTitle.filter {$0 != offerTitle[(indexPath as NSIndexPath).row]}
             print(selectedOffersTitle)
             
             
@@ -195,10 +206,10 @@ class TransactionsVC: UIViewController,UICollectionViewDataSource,UICollectionVi
     }
     
     
-    func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         
         
-        let previewAction = UITableViewRowAction(style: .Normal, title: "Preview Offer") { (rowAction:UITableViewRowAction, indexPath:NSIndexPath) -> Void in
+        let previewAction = UITableViewRowAction(style: .normal, title: "Preview Offer") { (rowAction:UITableViewRowAction, indexPath:IndexPath) -> Void in
             //TODO: preview the row at indexPath here
             
             print("preview is clicked ")

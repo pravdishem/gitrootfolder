@@ -32,16 +32,16 @@ class MenuCategoriesVC: UIViewController, UITableViewDataSource, UITableViewDele
         tvCategories.reloadData()
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
     }
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrMenuCategories.count
     }
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        cell.textLabel?.text = arrStrMenuCategories[indexPath.row] as! String
+        cell.textLabel?.text = arrStrMenuCategories[(indexPath as NSIndexPath).row] 
         
         return cell
     }
@@ -57,7 +57,7 @@ class MenuCategoriesVC: UIViewController, UITableViewDataSource, UITableViewDele
         
         
         
-            Alamofire.request(.POST, "http://dishem.com/DishemBusiness/GetCategory.php?restaurantId=115")
+            Alamofire.request("http://dishem.com/DishemBusiness/GetCategory.php?restaurantId=115")
             .responseJSON { response in
                 print(response.request)  // original URL request
                 print(response.response) // URL response
@@ -70,14 +70,14 @@ class MenuCategoriesVC: UIViewController, UITableViewDataSource, UITableViewDele
                     let Response:NSDictionary = JSON as! NSDictionary
                     print(Response)
                     
-                    self.arrMenuCategories = Response.objectForKey("GetMenuCategory") as! NSArray
+                    self.arrMenuCategories = Response.object(forKey: "GetMenuCategory") as! NSArray
                     
                     if(self.arrMenuCategories.count > 0)
                     {
                         
                         for index in 0...self.arrMenuCategories.count-1{
                             
-                            let strCategoryName: String = self.arrMenuCategories[index].objectForKey("categoryName") as! String
+                            let strCategoryName: String = (self.arrMenuCategories[index] as AnyObject).object(forKey: "categoryName") as! String
                             
                             self.arrStrMenuCategories.append(strCategoryName)
                             

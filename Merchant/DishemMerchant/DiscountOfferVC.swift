@@ -15,7 +15,7 @@ class DiscountOfferVC: UIViewController {
         super.viewDidLoad()
    
         title = "DIscount Offer"
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.blueColor()]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.blue]
 
         
         btnHelp.layer.cornerRadius = 7

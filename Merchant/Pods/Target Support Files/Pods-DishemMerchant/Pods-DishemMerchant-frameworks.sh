@@ -84,10 +84,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-DishemMerchant/Alamofire.framework"
-  install_framework "Pods-DishemMerchant/SCLAlertView.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/Alamofire/Alamofire.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/SCLAlertView/SCLAlertView.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-DishemMerchant/Alamofire.framework"
-  install_framework "Pods-DishemMerchant/SCLAlertView.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/Alamofire/Alamofire.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/SCLAlertView/SCLAlertView.framework"
 fi

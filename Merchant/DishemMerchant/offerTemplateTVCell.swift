@@ -22,11 +22,11 @@ class offerTemplateTVCell: UITableViewCell {
     
     var isChecked: Bool = false
     
-    @IBAction func click(sender: AnyObject) {
+    @IBAction func click(_ sender: AnyObject) {
         if (isChecked == false){
             
             //let img = UIImage(named: "uncheck11")
-            checkbox.setBackgroundImage(checkedImage, forState: .Normal)
+            checkbox.setBackgroundImage(checkedImage, for: UIControlState())
             
             
             isChecked = true
@@ -35,7 +35,7 @@ class offerTemplateTVCell: UITableViewCell {
             
             // image1 = UIImageView(image: uncheckedImage)
             //let img = UIImage(checkedImage: "check11")
-            checkbox.setBackgroundImage(uncheckedImage, forState: .Normal)
+            checkbox.setBackgroundImage(uncheckedImage, for: UIControlState())
             isChecked = false
             
             
@@ -49,7 +49,7 @@ class offerTemplateTVCell: UITableViewCell {
         // Initialization code
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
