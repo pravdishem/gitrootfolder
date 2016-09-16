@@ -246,7 +246,7 @@ open class MultipartFormData {
                 return
             }
         } catch {
-            setBodyPartError(withReason: .bodyPartFileNotReachableWithError(atURL: fileURL, error: error))
+            setBodyPartError(withReason: .bodyPartFileNotReachableWithError(atURL: fileURL, error: error as! Error))
             return
         }
 
@@ -278,7 +278,7 @@ open class MultipartFormData {
             bodyContentLength = fileSize.uint64Value
         }
         catch {
-            setBodyPartError(withReason: .bodyPartFileSizeQueryFailedWithError(forURL: fileURL, error: error))
+            setBodyPartError(withReason: .bodyPartFileSizeQueryFailedWithError(forURL: fileURL, error: error as! Error))
             return
         }
 
@@ -442,7 +442,7 @@ open class MultipartFormData {
             let bytesRead = inputStream.read(&buffer, maxLength: streamBufferSize)
 
             if let error = inputStream.streamError {
-                throw AFError.multipartEncodingFailed(reason: .inputStreamReadFailed(error: error))
+                throw AFError.multipartEncodingFailed(reason: .inputStreamReadFailed(error: error as! Error))
             }
 
             if bytesRead > 0 {
@@ -485,7 +485,7 @@ open class MultipartFormData {
             let bytesRead = inputStream.read(&buffer, maxLength: streamBufferSize)
 
             if let streamError = inputStream.streamError {
-                throw AFError.multipartEncodingFailed(reason: .inputStreamReadFailed(error: streamError))
+                throw AFError.multipartEncodingFailed(reason: .inputStreamReadFailed(error: streamError as! Error))
             }
 
             if bytesRead > 0 {
@@ -522,7 +522,7 @@ open class MultipartFormData {
             let bytesWritten = outputStream.write(buffer, maxLength: bytesToWrite)
 
             if let error = outputStream.streamError {
-                throw AFError.multipartEncodingFailed(reason: .outputStreamWriteFailed(error: error))
+                throw AFError.multipartEncodingFailed(reason: .outputStreamWriteFailed(error: error as! Error))
             }
 
             bytesToWrite -= bytesWritten

@@ -30,8 +30,8 @@ extension Manager {
         case ResumeData(NSData)
     }
 
-    private func download(downloadable: Downloadable, destination: Request.DownloadFileDestination) -> Request {
-        var downloadTask: NSURLSessionDownloadTask!
+    private func download(downloadable: Downloadable, destination: @escaping Request.DownloadFileDestination) -> Request {
+        var downloadTask: URLSessionDownloadTask!
 
         switch downloadable {
         case .Request(let request):
@@ -44,7 +44,7 @@ extension Manager {
             }
         }
 
-        let request = Request(session: session, task: downloadTask)
+        let request = Request(session: session, requestTask: downloadTask)
 
         if let downloadDelegate = request.delegate as? Request.DownloadTaskDelegate {
             downloadDelegate.downloadTaskDidFinishDownloadingToURL = { session, downloadTask, URL in
@@ -134,7 +134,7 @@ extension Request {
         file written to during the download process. The closure takes two arguments: the temporary file URL and the URL 
         response, and returns a single argument: the file URL where the temporary file should be moved.
     */
-    public typealias DownloadFileDestination = (NSURL, NSHTTPURLResponse) -> NSURL
+    public typealias DownloadFileDestination = (NSURL, HTTPURLResponse) -> NSURL
 
     /**
         Creates a download file destination closure which uses the default file manager to move the temporary file to a 
@@ -146,12 +146,12 @@ extension Request {
         - returns: A download file destination closure.
     */
     public class func suggestedDownloadDestination(
-        directory directory: NSSearchPathDirectory = .DocumentDirectory,
-        domain: NSSearchPathDomainMask = .UserDomainMask)
+        directory: FileManager.SearchPathDirectory = .documentDirectory,
+        domain: FileManager.SearchPathDomainMask = .userDomainMask)
         -> DownloadFileDestination
     {
         return { temporaryURL, response -> NSURL in
-            let directoryURLs = NSFileManager.defaultManager().URLsForDirectory(directory, inDomains: domain)
+            let directoryURLs = FileManager.default.urls(for: directory, in: domain)
 
             if !directoryURLs.isEmpty {
                 return directoryURLs[0].URLByAppendingPathComponent(response.suggestedFilename!)
@@ -174,8 +174,8 @@ extension Request {
 
     // MARK: - DownloadTaskDelegate
 
-    class DownloadTaskDelegate: TaskDelegate, NSURLSessionDownloadDelegate {
-        var downloadTask: NSURLSessionDownloadTask? { return task as? NSURLSessionDownloadTask }
+    class DownloadTaskDelegate: TaskDelegate, URLSessionDownloadDelegate {
+        var downloadTask: URLSessionDownloadTask? { return task as? URLSessionDownloadTask }
         var downloadProgress: ((Int64, Int64, Int64) -> Void)?
 
         var resumeData: NSData?
@@ -185,21 +185,21 @@ extension Request {
 
         // MARK: Override Closures
 
-        var downloadTaskDidFinishDownloadingToURL: ((NSURLSession, NSURLSessionDownloadTask, NSURL) -> NSURL)?
-        var downloadTaskDidWriteData: ((NSURLSession, NSURLSessionDownloadTask, Int64, Int64, Int64) -> Void)?
-        var downloadTaskDidResumeAtOffset: ((NSURLSession, NSURLSessionDownloadTask, Int64, Int64) -> Void)?
+        var downloadTaskDidFinishDownloadingToURL: ((URLSession, URLSessionDownloadTask, NSURL) -> NSURL)?
+        var downloadTaskDidWriteData: ((URLSession, URLSessionDownloadTask, Int64, Int64, Int64) -> Void)?
+        var downloadTaskDidResumeAtOffset: ((URLSession, URLSessionDownloadTask, Int64, Int64) -> Void)?
 
         // MARK: Delegate Methods
 
         func URLSession(
-            session: NSURLSession,
-            downloadTask: NSURLSessionDownloadTask,
+            session: URLSession,
+            downloadTask: URLSessionDownloadTask,
             didFinishDownloadingToURL location: NSURL)
         {
             if let downloadTaskDidFinishDownloadingToURL = downloadTaskDidFinishDownloadingToURL {
                 do {
                     let destination = downloadTaskDidFinishDownloadingToURL(session, downloadTask, location)
-                    try NSFileManager.defaultManager().moveItemAtURL(location, toURL: destination)
+                    try FileManager.default.moveItem(at: location as URL, to: destination as URL)
                 } catch {
                     self.error = error as NSError
                 }
@@ -207,8 +207,8 @@ extension Request {
         }
 
         func URLSession(
-            session: NSURLSession,
-            downloadTask: NSURLSessionDownloadTask,
+            session: URLSession,
+            downloadTask: URLSessionDownloadTask,
             didWriteData bytesWritten: Int64,
             totalBytesWritten: Int64,
             totalBytesExpectedToWrite: Int64)
@@ -232,8 +232,8 @@ extension Request {
         }
 
         func URLSession(
-            session: NSURLSession,
-            downloadTask: NSURLSessionDownloadTask,
+            session: URLSession,
+            downloadTask: URLSessionDownloadTask,
             didResumeAtOffset fileOffset: Int64,
             expectedTotalBytes: Int64)
         {

@@ -455,7 +455,7 @@ open class DownloadRequest: Request {
     // MARK: Properties
 
     /// The resume data of the underlying download task if available after a failure.
-    open var resumeData: Data? { return downloadDelegate.resumeData }
+    open var resumeData: Data? { return downloadDelegate.resumeData as Data? }
 
     /// The progress of downloading the response data from the server for the request.
     open var progress: Progress { return downloadDelegate.progress }

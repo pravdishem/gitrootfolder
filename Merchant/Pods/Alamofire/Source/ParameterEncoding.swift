@@ -284,7 +284,7 @@ public struct JSONEncoding: ParameterEncoding {
 
             urlRequest.httpBody = data
         } catch {
-            throw AFError.parameterEncodingFailed(reason: .jsonEncodingFailed(error: error))
+            throw AFError.parameterEncodingFailed(reason: .jsonEncodingFailed(error: error as! Error))
         }
 
         return urlRequest
@@ -359,7 +359,7 @@ public struct PropertyListEncoding: ParameterEncoding {
 
             urlRequest.httpBody = data
         } catch {
-            throw AFError.parameterEncodingFailed(reason: .propertyListEncodingFailed(error: error))
+            throw AFError.parameterEncodingFailed(reason: .propertyListEncodingFailed(error: error as! Error))
         }
 
         return urlRequest

@@ -501,7 +501,7 @@ extension Request {
             let json = try JSONSerialization.jsonObject(with: validData, options: options)
             return .success(json)
         } catch {
-            return .failure(AFError.responseSerializationFailed(reason: .jsonSerializationFailed(error: error)))
+            return .failure(AFError.responseSerializationFailed(reason: .jsonSerializationFailed(error: error as! Error)))
         }
     }
 }
@@ -622,7 +622,7 @@ extension Request {
             let plist = try PropertyListSerialization.propertyList(from: validData, options: options, format: nil)
             return .success(plist)
         } catch {
-            return .failure(AFError.responseSerializationFailed(reason: .propertyListSerializationFailed(error: error)))
+            return .failure(AFError.responseSerializationFailed(reason: .propertyListSerializationFailed(error: error as! Error)))
         }
     }
 }

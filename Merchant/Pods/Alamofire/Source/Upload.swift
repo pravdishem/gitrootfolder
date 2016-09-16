@@ -28,12 +28,12 @@ extension Manager {
     private enum Uploadable {
         case Data(NSURLRequest, NSData)
         case File(NSURLRequest, NSURL)
-        case Stream(NSURLRequest, NSInputStream)
+        case Stream(NSURLRequest, InputStream)
     }
 
     private func upload(uploadable: Uploadable) -> Request {
-        var uploadTask: NSURLSessionUploadTask!
-        var HTTPBodyStream: NSInputStream?
+        var uploadTask: URLSessionUploadTask!
+        var HTTPBodyStream: InputStream?
 
         switch uploadable {
         case .Data(let request, let data):
@@ -52,7 +52,7 @@ extension Manager {
             HTTPBodyStream = stream
         }
 
-        let request = Request(session: session, task: uploadTask)
+        let request = Request(session: session, requestTask: uploadTask)
 
         if HTTPBodyStream != nil {
             request.delegate.taskNeedNewBodyStream = { _, _ in
@@ -160,7 +160,7 @@ extension Manager {
 
         - returns: The created upload request.
     */
-    public func upload(URLRequest: URLRequestConvertible, stream: NSInputStream) -> Request {
+    public func upload(URLRequest: URLRequestConvertible, stream: InputStream) -> Request {
         return upload(.Stream(URLRequest.URLRequest, stream))
     }
 
@@ -180,7 +180,7 @@ extension Manager {
         method: Method,
         _ URLString: URLStringConvertible,
         headers: [String: String]? = nil,
-        stream: NSInputStream)
+        stream: InputStream)
         -> Request
     {
         let mutableURLRequest = URLRequest(method, URLString, headers: headers)
@@ -204,7 +204,7 @@ extension Manager {
     */
     public enum MultipartFormDataEncodingResult {
         case Success(request: Request, streamingFromDisk: Bool, streamFileURL: NSURL?)
-        case Failure(ErrorType)
+        case Failure(Error)
     }
 
     /**
@@ -237,9 +237,9 @@ extension Manager {
         method: Method,
         _ URLString: URLStringConvertible,
         headers: [String: String]? = nil,
-        multipartFormData: MultipartFormData -> Void,
+        multipartFormData: (MultipartFormData) -> Void,
         encodingMemoryThreshold: UInt64 = Manager.MultipartFormDataEncodingMemoryThreshold,
-        encodingCompletion: (MultipartFormDataEncodingResult -> Void)?)
+        encodingCompletion: ((MultipartFormDataEncodingResult) -> Void)?)
     {
         let mutableURLRequest = URLRequest(method, URLString, headers: headers)
 
@@ -277,11 +277,11 @@ extension Manager {
     */
     public func upload(
         URLRequest: URLRequestConvertible,
-        multipartFormData: MultipartFormData -> Void,
+        multipartFormData: @escaping (MultipartFormData) -> Void,
         encodingMemoryThreshold: UInt64 = Manager.MultipartFormDataEncodingMemoryThreshold,
-        encodingCompletion: (MultipartFormDataEncodingResult -> Void)?)
+        encodingCompletion: ((MultipartFormDataEncodingResult) -> Void)?)
     {
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
+        dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0).asynchronously(DispatchQueue.global) {
             let formData = MultipartFormData()
             multipartFormData(formData)
 
@@ -299,26 +299,26 @@ extension Manager {
                         streamFileURL: nil
                     )
 
-                    dispatch_async(dispatch_get_main_queue()) {
+                    dispatch_get_main_queue().asynchronously(DispatchQueue.main) {
                         encodingCompletion?(encodingResult)
                     }
                 } catch {
-                    dispatch_async(dispatch_get_main_queue()) {
+                    dispatch_get_main_queue().asynchronously(DispatchQueue.main) {
                         encodingCompletion?(.Failure(error as NSError))
                     }
                 }
             } else {
-                let fileManager = NSFileManager.defaultManager()
+                let fileManager = FileManager.defaultManager()
                 let tempDirectoryURL = NSURL(fileURLWithPath: NSTemporaryDirectory())
-                let directoryURL = tempDirectoryURL.URLByAppendingPathComponent("com.alamofire.manager/multipart.form.data")
-                let fileName = NSUUID().UUIDString
+                let directoryURL = tempDirectoryURL.appendingPathComponent("com.alamofire.manager/multipart.form.data")
+                let fileName = NSUUID().uuidString
                 let fileURL = directoryURL.URLByAppendingPathComponent(fileName)
 
                 do {
                     try fileManager.createDirectoryAtURL(directoryURL, withIntermediateDirectories: true, attributes: nil)
                     try formData.writeEncodedDataToDisk(fileURL)
 
-                    dispatch_async(dispatch_get_main_queue()) {
+                    dispatch_get_main_queue().asynchronously(DispatchQueue.main) {
                         let encodingResult = MultipartFormDataEncodingResult.Success(
                             request: self.upload(URLRequestWithContentType, file: fileURL),
                             streamingFromDisk: true,
@@ -327,7 +327,7 @@ extension Manager {
                         encodingCompletion?(encodingResult)
                     }
                 } catch {
-                    dispatch_async(dispatch_get_main_queue()) {
+                    dispatch_get_main_queue().asynchronously(DispatchQueue.main) {
                         encodingCompletion?(.Failure(error as NSError))
                     }
                 }
@@ -343,20 +343,20 @@ extension Request {
     // MARK: - UploadTaskDelegate
 
     class UploadTaskDelegate: DataTaskDelegate {
-        var uploadTask: NSURLSessionUploadTask? { return task as? NSURLSessionUploadTask }
+        var uploadTask: URLSessionUploadTask? { return task as? URLSessionUploadTask }
         var uploadProgress: ((Int64, Int64, Int64) -> Void)!
 
         // MARK: - NSURLSessionTaskDelegate
 
         // MARK: Override Closures
 
-        var taskDidSendBodyData: ((NSURLSession, NSURLSessionTask, Int64, Int64, Int64) -> Void)?
+        var taskDidSendBodyData: ((URLSession, URLSessionTask, Int64, Int64, Int64) -> Void)?
 
         // MARK: Delegate Methods
 
         func URLSession(
-            session: NSURLSession,
-            task: NSURLSessionTask,
+            session: URLSession,
+            task: URLSessionTask,
             didSendBodyData bytesSent: Int64,
             totalBytesSent: Int64,
             totalBytesExpectedToSend: Int64)
