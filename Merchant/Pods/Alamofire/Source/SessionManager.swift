@@ -236,7 +236,7 @@ open class SessionManager {
             let encodedURLRequest = try encoding.encode(urlRequest, with: parameters)
             return request(encodedURLRequest)
         } catch {
-            return request(failedWith: error as! Error)
+            return request(failedWith: error)
         }
     }
 
@@ -261,7 +261,7 @@ open class SessionManager {
 
             return request
         } catch {
-            return request(failedWith: error as! Error)
+            return request(failedWith: error)
         }
     }
 
@@ -418,7 +418,7 @@ open class SessionManager {
             let urlRequest = try URLRequest(url: url, method: method, headers: headers)
             return upload(fileURL, with: urlRequest)
         } catch {
-            return upload(failedWith: error as! Error)
+            return upload(failedWith: error)
         }
     }
 
@@ -436,7 +436,7 @@ open class SessionManager {
             let urlRequest = try urlRequest.asURLRequest()
             return upload(.file(fileURL, urlRequest))
         } catch {
-            return upload(failedWith: error as! Error)
+            return upload(failedWith: error)
         }
     }
 
@@ -464,7 +464,7 @@ open class SessionManager {
             let urlRequest = try URLRequest(url: url, method: method, headers: headers)
             return upload(data, with: urlRequest)
         } catch {
-            return upload(failedWith: error as! Error)
+            return upload(failedWith: error)
         }
     }
 
@@ -482,7 +482,7 @@ open class SessionManager {
             let urlRequest = try urlRequest.asURLRequest()
             return upload(.data(data, urlRequest))
         } catch {
-            return upload(failedWith: error as! Error)
+            return upload(failedWith: error)
         }
     }
 
@@ -510,7 +510,7 @@ open class SessionManager {
             let urlRequest = try URLRequest(url: url, method: method, headers: headers)
             return upload(stream, with: urlRequest)
         } catch {
-            return upload(failedWith: error as! Error)
+            return upload(failedWith: error)
         }
     }
 
@@ -528,7 +528,7 @@ open class SessionManager {
             let urlRequest = try urlRequest.asURLRequest()
             return upload(.stream(stream, urlRequest))
         } catch {
-            return upload(failedWith: error as! Error)
+            return upload(failedWith: error)
         }
     }
 
@@ -577,7 +577,7 @@ open class SessionManager {
                 encodingCompletion: encodingCompletion
             )
         } catch {
-            DispatchQueue.main.async { encodingCompletion?(.failure(error as! Error)) }
+            DispatchQueue.main.async { encodingCompletion?(.failure(error)) }
         }
     }
 
@@ -662,7 +662,7 @@ open class SessionManager {
                     }
                 }
             } catch {
-                DispatchQueue.main.async { encodingCompletion?(.failure(error as! Error)) }
+                DispatchQueue.main.async { encodingCompletion?(.failure(error)) }
             }
         }
     }
@@ -684,7 +684,7 @@ open class SessionManager {
 
             return upload
         } catch {
-            return upload(failedWith: error as! Error)
+            return upload(failedWith: error)
         }
     }
 
@@ -740,7 +740,7 @@ open class SessionManager {
 
             return request
         } catch {
-            return stream(failedWith: error as! Error)
+            return stream(failedWith: error)
         }
     }
 

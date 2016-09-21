@@ -1,1774 +1,588 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>015B588F1D52048200A53B1E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AddMenuItemViC.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>015B58901D52048200A53B1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>015B588F1D52048200A53B1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>015B58911D521FB300A53B1E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>MenuItems1ViewController.swift</string>
-			<key>path</key>
-			<string>../MenuItems1ViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>015B58921D521FB300A53B1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>015B58911D521FB300A53B1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1A3BE41F8D332D6083D45B2F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>2B4B20D8B1F5AB0EB1DB99AF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-DishemMerchant/Pods-DishemMerchant-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>317C4AEF5048253419E9762D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-DishemMerchant/Pods-DishemMerchant-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>3DE3371B80F2982044B47EF3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>7967719E80D2C70953658F3F</string>
-				<string>4C5E6392055D8D3A583431A7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>406E5228082C754D356ECEC8</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9D0AB94C1D8BCD5E00D1E00C</string>
-				<string>9D0AB94A1D8BCD5600D1E00C</string>
-				<string>F849F83271C834D5431955FD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4C5E6392055D8D3A583431A7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-DishemMerchant.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-DishemMerchant/Pods-DishemMerchant.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>66FAE77034A4E99A1BC51DDD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F849F83271C834D5431955FD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7967719E80D2C70953658F3F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-DishemMerchant.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-DishemMerchant/Pods-DishemMerchant.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9D0AB94A1D8BCD5600D1E00C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Alamofire.framework</string>
-			<key>path</key>
-			<string>../../../Library/Developer/Xcode/DerivedData/DishemMerchant-grxapbfgpjezteccclzanswmbtkw/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9D0AB94B1D8BCD5600D1E00C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9D0AB94A1D8BCD5600D1E00C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9D0AB94C1D8BCD5E00D1E00C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>SCLAlertView.framework</string>
-			<key>path</key>
-			<string>../../../Library/Developer/Xcode/DerivedData/DishemMerchant-grxapbfgpjezteccclzanswmbtkw/Build/Products/Debug-iphonesimulator/SCLAlertView/SCLAlertView.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9D0AB94D1D8BCD5E00D1E00C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9D0AB94C1D8BCD5E00D1E00C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9D0AB94E1D8BCD6D00D1E00C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9D0AB94A1D8BCD5600D1E00C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>CodeSignOnCopy</string>
-					<string>RemoveHeadersOnCopy</string>
-				</array>
-			</dict>
-		</dict>
-		<key>9D0AB94F1D8BCD7600D1E00C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9D0AB94C1D8BCD5E00D1E00C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>CodeSignOnCopy</string>
-					<string>RemoveHeadersOnCopy</string>
-				</array>
-			</dict>
-		</dict>
-		<key>9D4D23381D5ABA2300121A9C</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>path</key>
-			<string>sriniBoard.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9D4D23391D5ABA2300121A9C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9D4D23381D5ABA2300121A9C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9D504B401D8A976F00BEC3E7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>dstPath</key>
-			<string></string>
-			<key>dstSubfolderSpec</key>
-			<string>10</string>
-			<key>files</key>
-			<array>
-				<string>9D0AB94F1D8BCD7600D1E00C</string>
-				<string>9D0AB94E1D8BCD6D00D1E00C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXCopyFilesBuildPhase</string>
-			<key>name</key>
-			<string>Embed Frameworks</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9D7FAE331D5DD63000528782</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>SriniDashboardVC.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9D7FAE341D5DD63000528782</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9D7FAE331D5DD63000528782</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C3473AE41D4233A900A44CC3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C3473AEF1D4233A900A44CC3</string>
-				<string>C3473AEE1D4233A900A44CC3</string>
-				<string>406E5228082C754D356ECEC8</string>
-				<string>3DE3371B80F2982044B47EF3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3473AE51D4233A900A44CC3</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0730</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Dishem</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>C3473AEC1D4233A900A44CC3</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-						<key>DevelopmentTeam</key>
-						<string>LMYKZ4EGC6</string>
-						<key>LastSwiftMigration</key>
-						<string>0800</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>C3473AE81D4233A900A44CC3</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>C3473AE41D4233A900A44CC3</string>
-			<key>productRefGroup</key>
-			<string>C3473AEE1D4233A900A44CC3</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>C3473AEC1D4233A900A44CC3</string>
-			</array>
-		</dict>
-		<key>C3473AE81D4233A900A44CC3</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>C3473AFD1D4233AA00A44CC3</string>
-				<string>C3473AFE1D4233AA00A44CC3</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>C3473AE91D4233A900A44CC3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9D7FAE341D5DD63000528782</string>
-				<string>C3473B1E1D42340100A44CC3</string>
-				<string>C3473B231D42340100A44CC3</string>
-				<string>C3473B271D42340100A44CC3</string>
-				<string>EF20295B1D64851D00F232AC</string>
-				<string>C3473B2B1D423B6600A44CC3</string>
-				<string>C3473B1D1D42340100A44CC3</string>
-				<string>EFF272531D6322BB00DE7F91</string>
-				<string>C3473B1A1D42340100A44CC3</string>
-				<string>015B58901D52048200A53B1E</string>
-				<string>C3473B1F1D42340100A44CC3</string>
-				<string>FA8219F01D5B3CB800495B54</string>
-				<string>C3473B251D42340100A44CC3</string>
-				<string>C3473B201D42340100A44CC3</string>
-				<string>EF2029551D6483A100F232AC</string>
-				<string>EFF272551D63237300DE7F91</string>
-				<string>015B58921D521FB300A53B1E</string>
-				<string>C3473B171D42340100A44CC3</string>
-				<string>EF2029591D6484B400F232AC</string>
-				<string>C3473B221D42340100A44CC3</string>
-				<string>C3473B181D42340100A44CC3</string>
-				<string>FAB08CE51D54BEBD005965D1</string>
-				<string>EF544F671D6333130078B80A</string>
-				<string>C3473AF11D4233A900A44CC3</string>
-				<string>C3473B191D42340100A44CC3</string>
-				<string>C3473B211D42340100A44CC3</string>
-				<string>C3473B241D42340100A44CC3</string>
-				<string>FA8219F21D5B508A00495B54</string>
-				<string>C3473B261D42340100A44CC3</string>
-				<string>C3473B1C1D42340100A44CC3</string>
-				<string>C3473B1B1D42340100A44CC3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C3473AEA1D4233A900A44CC3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9D0AB94D1D8BCD5E00D1E00C</string>
-				<string>9D0AB94B1D8BCD5600D1E00C</string>
-				<string>66FAE77034A4E99A1BC51DDD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C3473AEB1D4233A900A44CC3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FAC2C94E1D54FA8800779FE3</string>
-				<string>FAC2C94B1D54FA5C00779FE3</string>
-				<string>FAC2C94A1D54FA5C00779FE3</string>
-				<string>9D4D23391D5ABA2300121A9C</string>
-				<string>EFB15C4F1D585031009B7BC7</string>
-				<string>FAC2C9471D54C9F000779FE3</string>
-				<string>FAC2C9521D54FAAA00779FE3</string>
-				<string>FA4A7D591D53530100D1F3F7</string>
-				<string>FAC2C9561D54FABA00779FE3</string>
-				<string>FAC2C9541D54FAB100779FE3</string>
-				<string>C3473AFB1D4233AA00A44CC3</string>
-				<string>FAC2C9501D54FA9D00779FE3</string>
-				<string>FAC2C9581D54FAC100779FE3</string>
-				<string>C3473AF81D4233AA00A44CC3</string>
-				<string>C3473B031D4233CF00A44CC3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C3473AEC1D4233A900A44CC3</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>C3473AFF1D4233AA00A44CC3</string>
-			<key>buildPhases</key>
-			<array>
-				<string>1A3BE41F8D332D6083D45B2F</string>
-				<string>C3473AE91D4233A900A44CC3</string>
-				<string>C3473AEB1D4233A900A44CC3</string>
-				<string>C3473AEA1D4233A900A44CC3</string>
-				<string>9D504B401D8A976F00BEC3E7</string>
-				<string>2B4B20D8B1F5AB0EB1DB99AF</string>
-				<string>317C4AEF5048253419E9762D</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>DishemMerchant</string>
-			<key>productName</key>
-			<string>DishemMerchant</string>
-			<key>productReference</key>
-			<string>C3473AED1D4233A900A44CC3</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>C3473AED1D4233A900A44CC3</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>DishemMerchant.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>C3473AEE1D4233A900A44CC3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C3473AED1D4233A900A44CC3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3473AEF1D4233A900A44CC3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C3473AF01D4233A900A44CC3</string>
-				<string>FA783F831D5AE31800389B22</string>
-				<string>FA783F841D5AE33000389B22</string>
-				<string>FAC2C94C1D54FA6E00779FE3</string>
-				<string>C3473AF71D4233AA00A44CC3</string>
-				<string>C3473AFC1D4233AA00A44CC3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>DishemMerchant</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3473AF01D4233A900A44CC3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3473AF11D4233A900A44CC3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C3473AF01D4233A900A44CC3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C3473AF71D4233AA00A44CC3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3473AF81D4233AA00A44CC3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C3473AF71D4233AA00A44CC3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C3473AF91D4233AA00A44CC3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C3473AFA1D4233AA00A44CC3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3473AFA1D4233AA00A44CC3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3473AFB1D4233AA00A44CC3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C3473AF91D4233AA00A44CC3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C3473AFC1D4233AA00A44CC3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3473AFD1D4233AA00A44CC3</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>C3473AFE1D4233AA00A44CC3</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>C3473AFF1D4233AA00A44CC3</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>C3473B001D4233AA00A44CC3</string>
-				<string>C3473B011D4233AA00A44CC3</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>C3473B001D4233AA00A44CC3</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>7967719E80D2C70953658F3F</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>iPhone Developer</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>LMYKZ4EGC6</string>
-				<key>INFOPLIST_FILE</key>
-				<string>DishemMerchant/Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.dishem.DishemBusiness</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PROVISIONING_PROFILE</key>
-				<string></string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>C3473B011D4233AA00A44CC3</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>4C5E6392055D8D3A583431A7</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>iPhone Developer</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>LMYKZ4EGC6</string>
-				<key>INFOPLIST_FILE</key>
-				<string>DishemMerchant/Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.dishem.DishemBusiness</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PROVISIONING_PROFILE</key>
-				<string></string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>C3473B021D4233CF00A44CC3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>path</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3473B031D4233CF00A44CC3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C3473B021D4233CF00A44CC3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C3473B051D42340100A44CC3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>DashBoardVC.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3473B061D42340100A44CC3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>DesignAnOfferVC.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3473B071D42340100A44CC3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>DiscountOfferVC.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3473B081D42340100A44CC3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>PercentageDiscountOfferVC.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3473B091D42340100A44CC3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>RupeesDiscountOfferVC.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3473B0A1D42340100A44CC3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>TransactionsVC.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3473B0B1D42340100A44CC3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>TransactionCVCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3473B0C1D42340100A44CC3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>OutletTransactionTVCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3473B0D1D42340100A44CC3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>FreebiesOfferVC.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3473B0E1D42340100A44CC3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>CombinedOfferVC.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3473B0F1D42340100A44CC3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BillValueOfferVC.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3473B101D42340100A44CC3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>FixedRateOfferVC.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3473B111D42340100A44CC3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>DiscountOfferAdvVC.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3473B121D42340100A44CC3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>RupeeDiscountOfferAdvVC.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3473B131D42340100A44CC3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>PercentageDiscountOfferAdvVC.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3473B141D42340100A44CC3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>myOutletVC.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3473B151D42340100A44CC3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>myOutletCVCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3473B171D42340100A44CC3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C3473B051D42340100A44CC3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C3473B181D42340100A44CC3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C3473B061D42340100A44CC3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C3473B191D42340100A44CC3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C3473B071D42340100A44CC3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C3473B1A1D42340100A44CC3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C3473B081D42340100A44CC3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C3473B1B1D42340100A44CC3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C3473B091D42340100A44CC3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C3473B1C1D42340100A44CC3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C3473B0A1D42340100A44CC3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C3473B1D1D42340100A44CC3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C3473B0B1D42340100A44CC3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C3473B1E1D42340100A44CC3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C3473B0C1D42340100A44CC3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C3473B1F1D42340100A44CC3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C3473B0D1D42340100A44CC3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C3473B201D42340100A44CC3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C3473B0E1D42340100A44CC3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C3473B211D42340100A44CC3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C3473B0F1D42340100A44CC3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C3473B221D42340100A44CC3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C3473B101D42340100A44CC3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C3473B231D42340100A44CC3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C3473B111D42340100A44CC3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C3473B241D42340100A44CC3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C3473B121D42340100A44CC3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C3473B251D42340100A44CC3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C3473B131D42340100A44CC3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C3473B261D42340100A44CC3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C3473B141D42340100A44CC3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C3473B271D42340100A44CC3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C3473B151D42340100A44CC3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C3473B2A1D423B6600A44CC3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>LoginVC.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3473B2B1D423B6600A44CC3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C3473B2A1D423B6600A44CC3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EF2029541D6483A100F232AC</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>offerTemplatesVC.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EF2029551D6483A100F232AC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EF2029541D6483A100F232AC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EF2029581D6484B400F232AC</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>offerTemplatesCVCell.swift</string>
-			<key>path</key>
-			<string>../offerTemplatesCVCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EF2029591D6484B400F232AC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EF2029581D6484B400F232AC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EF20295A1D64851D00F232AC</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>offerTemplateTVCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EF20295B1D64851D00F232AC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EF20295A1D64851D00F232AC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EF544F661D6333130078B80A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>managerReviewTVCell.swift</string>
-			<key>path</key>
-			<string>../managerReviewTVCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EF544F671D6333130078B80A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EF544F661D6333130078B80A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EFB15C4E1D585031009B7BC7</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>path</key>
-			<string>nireesh.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EFB15C4F1D585031009B7BC7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EFB15C4E1D585031009B7BC7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EFF272521D6322BB00DE7F91</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>managerReviewVC.swift</string>
-			<key>path</key>
-			<string>../managerReviewVC.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EFF272531D6322BB00DE7F91</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EFF272521D6322BB00DE7F91</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EFF272541D63237300DE7F91</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>managerReviewCVcell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EFF272551D63237300DE7F91</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EFF272541D63237300DE7F91</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F849F83271C834D5431955FD</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_DishemMerchant.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>FA4A7D581D53530100D1F3F7</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>path</key>
-			<string>revs.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA4A7D591D53530100D1F3F7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FA4A7D581D53530100D1F3F7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FA783F831D5AE31800389B22</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>015B588F1D52048200A53B1E</string>
-				<string>C3473B0F1D42340100A44CC3</string>
-				<string>C3473B0E1D42340100A44CC3</string>
-				<string>C3473B051D42340100A44CC3</string>
-				<string>C3473B061D42340100A44CC3</string>
-				<string>C3473B111D42340100A44CC3</string>
-				<string>C3473B071D42340100A44CC3</string>
-				<string>C3473B101D42340100A44CC3</string>
-				<string>C3473B0D1D42340100A44CC3</string>
-				<string>C3473B2A1D423B6600A44CC3</string>
-				<string>EFF272521D6322BB00DE7F91</string>
-				<string>EFF272541D63237300DE7F91</string>
-				<string>EF544F661D6333130078B80A</string>
-				<string>FA8219EF1D5B3CB800495B54</string>
-				<string>FA8219F11D5B508A00495B54</string>
-				<string>015B58911D521FB300A53B1E</string>
-				<string>C3473B141D42340100A44CC3</string>
-				<string>C3473B151D42340100A44CC3</string>
-				<string>EF2029541D6483A100F232AC</string>
-				<string>EF2029581D6484B400F232AC</string>
-				<string>EF20295A1D64851D00F232AC</string>
-				<string>C3473B0C1D42340100A44CC3</string>
-				<string>C3473B081D42340100A44CC3</string>
-				<string>C3473B131D42340100A44CC3</string>
-				<string>C3473B091D42340100A44CC3</string>
-				<string>C3473B121D42340100A44CC3</string>
-				<string>FAB08CE41D54BEBD005965D1</string>
-				<string>C3473B0A1D42340100A44CC3</string>
-				<string>C3473B0B1D42340100A44CC3</string>
-				<string>9D7FAE331D5DD63000528782</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>controllers</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA783F841D5AE33000389B22</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9D4D23381D5ABA2300121A9C</string>
-				<string>C3473AF91D4233AA00A44CC3</string>
-				<string>C3473B021D4233CF00A44CC3</string>
-				<string>EFB15C4E1D585031009B7BC7</string>
-				<string>FA4A7D581D53530100D1F3F7</string>
-				<string>FAC2C9461D54C9F000779FE3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>views</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA8219EF1D5B3CB800495B54</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MenuCategoriesVC.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA8219F01D5B3CB800495B54</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FA8219EF1D5B3CB800495B54</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FA8219F11D5B508A00495B54</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MenuItemsVc.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA8219F21D5B508A00495B54</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FA8219F11D5B508A00495B54</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FAB08CE41D54BEBD005965D1</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>SignUpVC.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAB08CE51D54BEBD005965D1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FAB08CE41D54BEBD005965D1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FAC2C9461D54C9F000779FE3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>path</key>
-			<string>shaky.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAC2C9471D54C9F000779FE3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FAC2C9461D54C9F000779FE3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FAC2C9481D54FA5C00779FE3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>crcombinedoffers.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAC2C9491D54FA5C00779FE3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>crdiscountoffers.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAC2C94A1D54FA5C00779FE3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FAC2C9481D54FA5C00779FE3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FAC2C94B1D54FA5C00779FE3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FAC2C9491D54FA5C00779FE3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FAC2C94C1D54FA6E00779FE3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FAC2C94F1D54FA9D00779FE3</string>
-				<string>FAC2C9551D54FABA00779FE3</string>
-				<string>FAC2C9531D54FAB100779FE3</string>
-				<string>FAC2C9571D54FAC100779FE3</string>
-				<string>FAC2C9511D54FAAA00779FE3</string>
-				<string>FAC2C94D1D54FA8800779FE3</string>
-				<string>FAC2C9481D54FA5C00779FE3</string>
-				<string>FAC2C9491D54FA5C00779FE3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>images</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAC2C94D1D54FA8800779FE3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>name</key>
-			<string>crdiscountoffersadv.png</string>
-			<key>path</key>
-			<string>Assets.xcassets/crdiscountoffersadv.imageset/crdiscountoffersadv.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAC2C94E1D54FA8800779FE3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FAC2C94D1D54FA8800779FE3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FAC2C94F1D54FA9D00779FE3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>name</key>
-			<string>crdiscountoffersadvanced.png</string>
-			<key>path</key>
-			<string>Assets.xcassets/crdiscountoffersadvanced.imageset/crdiscountoffersadvanced.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAC2C9501D54FA9D00779FE3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FAC2C94F1D54FA9D00779FE3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FAC2C9511D54FAAA00779FE3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>name</key>
-			<string>crdiscountoffersimple.png</string>
-			<key>path</key>
-			<string>Assets.xcassets/crdiscountoffersimple.imageset/crdiscountoffersimple.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAC2C9521D54FAAA00779FE3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FAC2C9511D54FAAA00779FE3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FAC2C9531D54FAB100779FE3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>name</key>
-			<string>crfixedrateoffers.png</string>
-			<key>path</key>
-			<string>Assets.xcassets/crfixedrateoffers.imageset/crfixedrateoffers.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAC2C9541D54FAB100779FE3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FAC2C9531D54FAB100779FE3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FAC2C9551D54FABA00779FE3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>name</key>
-			<string>crfreebiesoffers.png</string>
-			<key>path</key>
-			<string>Assets.xcassets/crfreebiesoffers.imageset/crfreebiesoffers.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAC2C9561D54FABA00779FE3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FAC2C9551D54FABA00779FE3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FAC2C9571D54FAC100779FE3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>name</key>
-			<string>crminimumbilloffers.png</string>
-			<key>path</key>
-			<string>Assets.xcassets/crminimumbilloffers.imageset/crminimumbilloffers.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAC2C9581D54FAC100779FE3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FAC2C9571D54FAC100779FE3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>C3473AE51D4233A900A44CC3</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		015B58901D52048200A53B1E /* AddMenuItemViC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015B588F1D52048200A53B1E /* AddMenuItemViC.swift */; };
+		015B58921D521FB300A53B1E /* MenuItems1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015B58911D521FB300A53B1E /* MenuItems1ViewController.swift */; };
+		573BF332F4A6E60492E5045A /* Pods_DishemMerchant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF73572F43F5302F58F1AB8A /* Pods_DishemMerchant.framework */; };
+		9D4D23391D5ABA2300121A9C /* sriniBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D4D23381D5ABA2300121A9C /* sriniBoard.storyboard */; };
+		9D7FAE341D5DD63000528782 /* SriniDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7FAE331D5DD63000528782 /* SriniDashboardVC.swift */; };
+		C3473AF11D4233A900A44CC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3473AF01D4233A900A44CC3 /* AppDelegate.swift */; };
+		C3473AF81D4233AA00A44CC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3473AF71D4233AA00A44CC3 /* Assets.xcassets */; };
+		C3473AFB1D4233AA00A44CC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3473AF91D4233AA00A44CC3 /* LaunchScreen.storyboard */; };
+		C3473B031D4233CF00A44CC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3473B021D4233CF00A44CC3 /* Main.storyboard */; };
+		C3473B171D42340100A44CC3 /* DashBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3473B051D42340100A44CC3 /* DashBoardVC.swift */; };
+		C3473B181D42340100A44CC3 /* DesignAnOfferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3473B061D42340100A44CC3 /* DesignAnOfferVC.swift */; };
+		C3473B191D42340100A44CC3 /* DiscountOfferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3473B071D42340100A44CC3 /* DiscountOfferVC.swift */; };
+		C3473B1A1D42340100A44CC3 /* PercentageDiscountOfferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3473B081D42340100A44CC3 /* PercentageDiscountOfferVC.swift */; };
+		C3473B1B1D42340100A44CC3 /* RupeesDiscountOfferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3473B091D42340100A44CC3 /* RupeesDiscountOfferVC.swift */; };
+		C3473B1C1D42340100A44CC3 /* TransactionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3473B0A1D42340100A44CC3 /* TransactionsVC.swift */; };
+		C3473B1D1D42340100A44CC3 /* TransactionCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3473B0B1D42340100A44CC3 /* TransactionCVCell.swift */; };
+		C3473B1E1D42340100A44CC3 /* OutletTransactionTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3473B0C1D42340100A44CC3 /* OutletTransactionTVCell.swift */; };
+		C3473B1F1D42340100A44CC3 /* FreebiesOfferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3473B0D1D42340100A44CC3 /* FreebiesOfferVC.swift */; };
+		C3473B201D42340100A44CC3 /* CombinedOfferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3473B0E1D42340100A44CC3 /* CombinedOfferVC.swift */; };
+		C3473B211D42340100A44CC3 /* BillValueOfferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3473B0F1D42340100A44CC3 /* BillValueOfferVC.swift */; };
+		C3473B221D42340100A44CC3 /* FixedRateOfferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3473B101D42340100A44CC3 /* FixedRateOfferVC.swift */; };
+		C3473B231D42340100A44CC3 /* DiscountOfferAdvVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3473B111D42340100A44CC3 /* DiscountOfferAdvVC.swift */; };
+		C3473B241D42340100A44CC3 /* RupeeDiscountOfferAdvVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3473B121D42340100A44CC3 /* RupeeDiscountOfferAdvVC.swift */; };
+		C3473B261D42340100A44CC3 /* myOutletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3473B141D42340100A44CC3 /* myOutletVC.swift */; };
+		C3473B271D42340100A44CC3 /* myOutletCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3473B151D42340100A44CC3 /* myOutletCVCell.swift */; };
+		C3473B2B1D423B6600A44CC3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3473B2A1D423B6600A44CC3 /* LoginVC.swift */; };
+		EF2029551D6483A100F232AC /* offerTemplatesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2029541D6483A100F232AC /* offerTemplatesVC.swift */; };
+		EF2029591D6484B400F232AC /* offerTemplatesCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2029581D6484B400F232AC /* offerTemplatesCVCell.swift */; };
+		EF20295B1D64851D00F232AC /* offerTemplateTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF20295A1D64851D00F232AC /* offerTemplateTVCell.swift */; };
+		EF282E911D8FCB1800463310 /* managerreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF282E901D8FCB1800463310 /* managerreviewVC.swift */; };
+		EF282E931D8FCBCE00463310 /* ManagerRegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF282E921D8FCBCE00463310 /* ManagerRegistrationVC.swift */; };
+		EF282E951D8FCDC200463310 /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF282E941D8FCDC200463310 /* MyModel.swift */; };
+		EF282E971D8FD32700463310 /* OptionsToFllVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF282E961D8FD32700463310 /* OptionsToFllVC.swift */; };
+		EF282E991D8FEA5F00463310 /* AddLogoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF282E981D8FEA5F00463310 /* AddLogoVC.swift */; };
+		EF282E9B1D9108E900463310 /* ContinueManagerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF282E9A1D9108E900463310 /* ContinueManagerVC.swift */; };
+		EF544F671D6333130078B80A /* managerReviewTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF544F661D6333130078B80A /* managerReviewTVCell.swift */; };
+		EFB15C4F1D585031009B7BC7 /* nireesh.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB15C4E1D585031009B7BC7 /* nireesh.storyboard */; };
+		EFF272531D6322BB00DE7F91 /* managerReviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF272521D6322BB00DE7F91 /* managerReviewVC.swift */; };
+		EFF272551D63237300DE7F91 /* managerReviewCVcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF272541D63237300DE7F91 /* managerReviewCVcell.swift */; };
+		FA4A7D591D53530100D1F3F7 /* revs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4A7D581D53530100D1F3F7 /* revs.storyboard */; };
+		FA8219F01D5B3CB800495B54 /* MenuCategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8219EF1D5B3CB800495B54 /* MenuCategoriesVC.swift */; };
+		FA8219F21D5B508A00495B54 /* MenuItemsVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8219F11D5B508A00495B54 /* MenuItemsVc.swift */; };
+		FAB08CE51D54BEBD005965D1 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB08CE41D54BEBD005965D1 /* SignUpVC.swift */; };
+		FAC2C9471D54C9F000779FE3 /* shaky.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC2C9461D54C9F000779FE3 /* shaky.storyboard */; };
+		FAC2C94A1D54FA5C00779FE3 /* crcombinedoffers.png in Resources */ = {isa = PBXBuildFile; fileRef = FAC2C9481D54FA5C00779FE3 /* crcombinedoffers.png */; };
+		FAC2C94B1D54FA5C00779FE3 /* crdiscountoffers.png in Resources */ = {isa = PBXBuildFile; fileRef = FAC2C9491D54FA5C00779FE3 /* crdiscountoffers.png */; };
+		FAC2C94E1D54FA8800779FE3 /* crdiscountoffersadv.png in Resources */ = {isa = PBXBuildFile; fileRef = FAC2C94D1D54FA8800779FE3 /* crdiscountoffersadv.png */; };
+		FAC2C9501D54FA9D00779FE3 /* crdiscountoffersadvanced.png in Resources */ = {isa = PBXBuildFile; fileRef = FAC2C94F1D54FA9D00779FE3 /* crdiscountoffersadvanced.png */; };
+		FAC2C9521D54FAAA00779FE3 /* crdiscountoffersimple.png in Resources */ = {isa = PBXBuildFile; fileRef = FAC2C9511D54FAAA00779FE3 /* crdiscountoffersimple.png */; };
+		FAC2C9541D54FAB100779FE3 /* crfixedrateoffers.png in Resources */ = {isa = PBXBuildFile; fileRef = FAC2C9531D54FAB100779FE3 /* crfixedrateoffers.png */; };
+		FAC2C9561D54FABA00779FE3 /* crfreebiesoffers.png in Resources */ = {isa = PBXBuildFile; fileRef = FAC2C9551D54FABA00779FE3 /* crfreebiesoffers.png */; };
+		FAC2C9581D54FAC100779FE3 /* crminimumbilloffers.png in Resources */ = {isa = PBXBuildFile; fileRef = FAC2C9571D54FAC100779FE3 /* crminimumbilloffers.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		015B588F1D52048200A53B1E /* AddMenuItemViC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMenuItemViC.swift; sourceTree = "<group>"; };
+		015B58911D521FB300A53B1E /* MenuItems1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItems1ViewController.swift; path = ../MenuItems1ViewController.swift; sourceTree = "<group>"; };
+		86CEE0053B6DD79C0C06A43F /* Pods-DishemMerchant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DishemMerchant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DishemMerchant/Pods-DishemMerchant.debug.xcconfig"; sourceTree = "<group>"; };
+		9D4D23381D5ABA2300121A9C /* sriniBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = sriniBoard.storyboard; sourceTree = "<group>"; };
+		9D7FAE331D5DD63000528782 /* SriniDashboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SriniDashboardVC.swift; sourceTree = "<group>"; };
+		A0585C4E8FE64564A4E7DF05 /* Pods-DishemMerchant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DishemMerchant.release.xcconfig"; path = "Pods/Target Support Files/Pods-DishemMerchant/Pods-DishemMerchant.release.xcconfig"; sourceTree = "<group>"; };
+		C3473AED1D4233A900A44CC3 /* DishemMerchant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DishemMerchant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3473AF01D4233A900A44CC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C3473AF71D4233AA00A44CC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3473AFA1D4233AA00A44CC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C3473AFC1D4233AA00A44CC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3473B021D4233CF00A44CC3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C3473B051D42340100A44CC3 /* DashBoardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardVC.swift; sourceTree = "<group>"; };
+		C3473B061D42340100A44CC3 /* DesignAnOfferVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignAnOfferVC.swift; sourceTree = "<group>"; };
+		C3473B071D42340100A44CC3 /* DiscountOfferVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscountOfferVC.swift; sourceTree = "<group>"; };
+		C3473B081D42340100A44CC3 /* PercentageDiscountOfferVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentageDiscountOfferVC.swift; sourceTree = "<group>"; };
+		C3473B091D42340100A44CC3 /* RupeesDiscountOfferVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RupeesDiscountOfferVC.swift; sourceTree = "<group>"; };
+		C3473B0A1D42340100A44CC3 /* TransactionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsVC.swift; sourceTree = "<group>"; };
+		C3473B0B1D42340100A44CC3 /* TransactionCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionCVCell.swift; sourceTree = "<group>"; };
+		C3473B0C1D42340100A44CC3 /* OutletTransactionTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutletTransactionTVCell.swift; sourceTree = "<group>"; };
+		C3473B0D1D42340100A44CC3 /* FreebiesOfferVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreebiesOfferVC.swift; sourceTree = "<group>"; };
+		C3473B0E1D42340100A44CC3 /* CombinedOfferVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinedOfferVC.swift; sourceTree = "<group>"; };
+		C3473B0F1D42340100A44CC3 /* BillValueOfferVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillValueOfferVC.swift; sourceTree = "<group>"; };
+		C3473B101D42340100A44CC3 /* FixedRateOfferVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixedRateOfferVC.swift; sourceTree = "<group>"; };
+		C3473B111D42340100A44CC3 /* DiscountOfferAdvVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscountOfferAdvVC.swift; sourceTree = "<group>"; };
+		C3473B121D42340100A44CC3 /* RupeeDiscountOfferAdvVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RupeeDiscountOfferAdvVC.swift; sourceTree = "<group>"; };
+		C3473B141D42340100A44CC3 /* myOutletVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myOutletVC.swift; sourceTree = "<group>"; };
+		C3473B151D42340100A44CC3 /* myOutletCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myOutletCVCell.swift; sourceTree = "<group>"; };
+		C3473B2A1D423B6600A44CC3 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		DF73572F43F5302F58F1AB8A /* Pods_DishemMerchant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DishemMerchant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF2029541D6483A100F232AC /* offerTemplatesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = offerTemplatesVC.swift; sourceTree = "<group>"; };
+		EF2029581D6484B400F232AC /* offerTemplatesCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = offerTemplatesCVCell.swift; path = ../offerTemplatesCVCell.swift; sourceTree = "<group>"; };
+		EF20295A1D64851D00F232AC /* offerTemplateTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = offerTemplateTVCell.swift; sourceTree = "<group>"; };
+		EF282E901D8FCB1800463310 /* managerreviewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = managerreviewVC.swift; sourceTree = "<group>"; };
+		EF282E921D8FCBCE00463310 /* ManagerRegistrationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagerRegistrationVC.swift; sourceTree = "<group>"; };
+		EF282E941D8FCDC200463310 /* MyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyModel.swift; sourceTree = "<group>"; };
+		EF282E961D8FD32700463310 /* OptionsToFllVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsToFllVC.swift; sourceTree = "<group>"; };
+		EF282E981D8FEA5F00463310 /* AddLogoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLogoVC.swift; sourceTree = "<group>"; };
+		EF282E9A1D9108E900463310 /* ContinueManagerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinueManagerVC.swift; sourceTree = "<group>"; };
+		EF544F661D6333130078B80A /* managerReviewTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = managerReviewTVCell.swift; path = ../managerReviewTVCell.swift; sourceTree = "<group>"; };
+		EFB15C4E1D585031009B7BC7 /* nireesh.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = nireesh.storyboard; sourceTree = "<group>"; };
+		EFF272521D6322BB00DE7F91 /* managerReviewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = managerReviewVC.swift; path = ../managerReviewVC.swift; sourceTree = "<group>"; };
+		EFF272541D63237300DE7F91 /* managerReviewCVcell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = managerReviewCVcell.swift; sourceTree = "<group>"; };
+		FA4A7D581D53530100D1F3F7 /* revs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = revs.storyboard; sourceTree = "<group>"; };
+		FA8219EF1D5B3CB800495B54 /* MenuCategoriesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCategoriesVC.swift; sourceTree = "<group>"; };
+		FA8219F11D5B508A00495B54 /* MenuItemsVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemsVc.swift; sourceTree = "<group>"; };
+		FAB08CE41D54BEBD005965D1 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		FAC2C9461D54C9F000779FE3 /* shaky.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = shaky.storyboard; sourceTree = "<group>"; };
+		FAC2C9481D54FA5C00779FE3 /* crcombinedoffers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crcombinedoffers.png; sourceTree = "<group>"; };
+		FAC2C9491D54FA5C00779FE3 /* crdiscountoffers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crdiscountoffers.png; sourceTree = "<group>"; };
+		FAC2C94D1D54FA8800779FE3 /* crdiscountoffersadv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crdiscountoffersadv.png; path = Assets.xcassets/crdiscountoffersadv.imageset/crdiscountoffersadv.png; sourceTree = "<group>"; };
+		FAC2C94F1D54FA9D00779FE3 /* crdiscountoffersadvanced.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crdiscountoffersadvanced.png; path = Assets.xcassets/crdiscountoffersadvanced.imageset/crdiscountoffersadvanced.png; sourceTree = "<group>"; };
+		FAC2C9511D54FAAA00779FE3 /* crdiscountoffersimple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crdiscountoffersimple.png; path = Assets.xcassets/crdiscountoffersimple.imageset/crdiscountoffersimple.png; sourceTree = "<group>"; };
+		FAC2C9531D54FAB100779FE3 /* crfixedrateoffers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crfixedrateoffers.png; path = Assets.xcassets/crfixedrateoffers.imageset/crfixedrateoffers.png; sourceTree = "<group>"; };
+		FAC2C9551D54FABA00779FE3 /* crfreebiesoffers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crfreebiesoffers.png; path = Assets.xcassets/crfreebiesoffers.imageset/crfreebiesoffers.png; sourceTree = "<group>"; };
+		FAC2C9571D54FAC100779FE3 /* crminimumbilloffers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crminimumbilloffers.png; path = Assets.xcassets/crminimumbilloffers.imageset/crminimumbilloffers.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		031C341FC9C137C32B220F57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				573BF332F4A6E60492E5045A /* Pods_DishemMerchant.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43F02F40DD38986A19FE9CB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86CEE0053B6DD79C0C06A43F /* Pods-DishemMerchant.debug.xcconfig */,
+				A0585C4E8FE64564A4E7DF05 /* Pods-DishemMerchant.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7AFD35BE299DF0C9490425F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF73572F43F5302F58F1AB8A /* Pods_DishemMerchant.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3473AE41D4233A900A44CC3 = {
+			isa = PBXGroup;
+			children = (
+				C3473AEF1D4233A900A44CC3 /* DishemMerchant */,
+				C3473AEE1D4233A900A44CC3 /* Products */,
+				43F02F40DD38986A19FE9CB1 /* Pods */,
+				7AFD35BE299DF0C9490425F9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C3473AEE1D4233A900A44CC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3473AED1D4233A900A44CC3 /* DishemMerchant.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3473AEF1D4233A900A44CC3 /* DishemMerchant */ = {
+			isa = PBXGroup;
+			children = (
+				C3473AF01D4233A900A44CC3 /* AppDelegate.swift */,
+				FA783F831D5AE31800389B22 /* controllers */,
+				FA783F841D5AE33000389B22 /* views */,
+				FAC2C94C1D54FA6E00779FE3 /* images */,
+				C3473AF71D4233AA00A44CC3 /* Assets.xcassets */,
+				C3473AFC1D4233AA00A44CC3 /* Info.plist */,
+			);
+			path = DishemMerchant;
+			sourceTree = "<group>";
+		};
+		FA783F831D5AE31800389B22 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				015B588F1D52048200A53B1E /* AddMenuItemViC.swift */,
+				EF282E981D8FEA5F00463310 /* AddLogoVC.swift */,
+				C3473B0F1D42340100A44CC3 /* BillValueOfferVC.swift */,
+				C3473B0E1D42340100A44CC3 /* CombinedOfferVC.swift */,
+				EF282E9A1D9108E900463310 /* ContinueManagerVC.swift */,
+				C3473B051D42340100A44CC3 /* DashBoardVC.swift */,
+				C3473B061D42340100A44CC3 /* DesignAnOfferVC.swift */,
+				C3473B111D42340100A44CC3 /* DiscountOfferAdvVC.swift */,
+				C3473B071D42340100A44CC3 /* DiscountOfferVC.swift */,
+				C3473B101D42340100A44CC3 /* FixedRateOfferVC.swift */,
+				C3473B0D1D42340100A44CC3 /* FreebiesOfferVC.swift */,
+				C3473B2A1D423B6600A44CC3 /* LoginVC.swift */,
+				EFF272521D6322BB00DE7F91 /* managerReviewVC.swift */,
+				EFF272541D63237300DE7F91 /* managerReviewCVcell.swift */,
+				EF544F661D6333130078B80A /* managerReviewTVCell.swift */,
+				EF282E901D8FCB1800463310 /* managerreviewVC.swift */,
+				EF282E921D8FCBCE00463310 /* ManagerRegistrationVC.swift */,
+				FA8219EF1D5B3CB800495B54 /* MenuCategoriesVC.swift */,
+				FA8219F11D5B508A00495B54 /* MenuItemsVc.swift */,
+				015B58911D521FB300A53B1E /* MenuItems1ViewController.swift */,
+				C3473B141D42340100A44CC3 /* myOutletVC.swift */,
+				C3473B151D42340100A44CC3 /* myOutletCVCell.swift */,
+				EF282E961D8FD32700463310 /* OptionsToFllVC.swift */,
+				EF2029541D6483A100F232AC /* offerTemplatesVC.swift */,
+				EF2029581D6484B400F232AC /* offerTemplatesCVCell.swift */,
+				EF20295A1D64851D00F232AC /* offerTemplateTVCell.swift */,
+				C3473B0C1D42340100A44CC3 /* OutletTransactionTVCell.swift */,
+				C3473B081D42340100A44CC3 /* PercentageDiscountOfferVC.swift */,
+				C3473B091D42340100A44CC3 /* RupeesDiscountOfferVC.swift */,
+				C3473B121D42340100A44CC3 /* RupeeDiscountOfferAdvVC.swift */,
+				FAB08CE41D54BEBD005965D1 /* SignUpVC.swift */,
+				C3473B0A1D42340100A44CC3 /* TransactionsVC.swift */,
+				C3473B0B1D42340100A44CC3 /* TransactionCVCell.swift */,
+				9D7FAE331D5DD63000528782 /* SriniDashboardVC.swift */,
+				EF282E941D8FCDC200463310 /* MyModel.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		FA783F841D5AE33000389B22 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				9D4D23381D5ABA2300121A9C /* sriniBoard.storyboard */,
+				C3473AF91D4233AA00A44CC3 /* LaunchScreen.storyboard */,
+				C3473B021D4233CF00A44CC3 /* Main.storyboard */,
+				EFB15C4E1D585031009B7BC7 /* nireesh.storyboard */,
+				FA4A7D581D53530100D1F3F7 /* revs.storyboard */,
+				FAC2C9461D54C9F000779FE3 /* shaky.storyboard */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		FAC2C94C1D54FA6E00779FE3 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				FAC2C94F1D54FA9D00779FE3 /* crdiscountoffersadvanced.png */,
+				FAC2C9551D54FABA00779FE3 /* crfreebiesoffers.png */,
+				FAC2C9531D54FAB100779FE3 /* crfixedrateoffers.png */,
+				FAC2C9571D54FAC100779FE3 /* crminimumbilloffers.png */,
+				FAC2C9511D54FAAA00779FE3 /* crdiscountoffersimple.png */,
+				FAC2C94D1D54FA8800779FE3 /* crdiscountoffersadv.png */,
+				FAC2C9481D54FA5C00779FE3 /* crcombinedoffers.png */,
+				FAC2C9491D54FA5C00779FE3 /* crdiscountoffers.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3473AEC1D4233A900A44CC3 /* DishemMerchant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3473AFF1D4233AA00A44CC3 /* Build configuration list for PBXNativeTarget "DishemMerchant" */;
+			buildPhases = (
+				17070822B574993321E36752 /* [CP] Check Pods Manifest.lock */,
+				C3473AE91D4233A900A44CC3 /* Sources */,
+				C3473AEB1D4233A900A44CC3 /* Resources */,
+				031C341FC9C137C32B220F57 /* Frameworks */,
+				E1C0DE2B1F4A4735A748F31F /* [CP] Embed Pods Frameworks */,
+				184E880DC28BDEE6CDCC78BA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DishemMerchant;
+			productName = DishemMerchant;
+			productReference = C3473AED1D4233A900A44CC3 /* DishemMerchant.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3473AE51D4233A900A44CC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Dishem;
+				TargetAttributes = {
+					C3473AEC1D4233A900A44CC3 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = LMYKZ4EGC6;
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = C3473AE81D4233A900A44CC3 /* Build configuration list for PBXProject "DishemMerchant" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3473AE41D4233A900A44CC3;
+			productRefGroup = C3473AEE1D4233A900A44CC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3473AEC1D4233A900A44CC3 /* DishemMerchant */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3473AEB1D4233A900A44CC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC2C94E1D54FA8800779FE3 /* crdiscountoffersadv.png in Resources */,
+				FAC2C94B1D54FA5C00779FE3 /* crdiscountoffers.png in Resources */,
+				FAC2C94A1D54FA5C00779FE3 /* crcombinedoffers.png in Resources */,
+				9D4D23391D5ABA2300121A9C /* sriniBoard.storyboard in Resources */,
+				EFB15C4F1D585031009B7BC7 /* nireesh.storyboard in Resources */,
+				FAC2C9471D54C9F000779FE3 /* shaky.storyboard in Resources */,
+				FAC2C9521D54FAAA00779FE3 /* crdiscountoffersimple.png in Resources */,
+				FA4A7D591D53530100D1F3F7 /* revs.storyboard in Resources */,
+				FAC2C9561D54FABA00779FE3 /* crfreebiesoffers.png in Resources */,
+				FAC2C9541D54FAB100779FE3 /* crfixedrateoffers.png in Resources */,
+				C3473AFB1D4233AA00A44CC3 /* LaunchScreen.storyboard in Resources */,
+				FAC2C9501D54FA9D00779FE3 /* crdiscountoffersadvanced.png in Resources */,
+				FAC2C9581D54FAC100779FE3 /* crminimumbilloffers.png in Resources */,
+				C3473AF81D4233AA00A44CC3 /* Assets.xcassets in Resources */,
+				C3473B031D4233CF00A44CC3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17070822B574993321E36752 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		184E880DC28BDEE6CDCC78BA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DishemMerchant/Pods-DishemMerchant-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1C0DE2B1F4A4735A748F31F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DishemMerchant/Pods-DishemMerchant-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3473AE91D4233A900A44CC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D7FAE341D5DD63000528782 /* SriniDashboardVC.swift in Sources */,
+				C3473B1E1D42340100A44CC3 /* OutletTransactionTVCell.swift in Sources */,
+				C3473B231D42340100A44CC3 /* DiscountOfferAdvVC.swift in Sources */,
+				EF282E971D8FD32700463310 /* OptionsToFllVC.swift in Sources */,
+				C3473B271D42340100A44CC3 /* myOutletCVCell.swift in Sources */,
+				EF20295B1D64851D00F232AC /* offerTemplateTVCell.swift in Sources */,
+				EF282E931D8FCBCE00463310 /* ManagerRegistrationVC.swift in Sources */,
+				C3473B2B1D423B6600A44CC3 /* LoginVC.swift in Sources */,
+				C3473B1D1D42340100A44CC3 /* TransactionCVCell.swift in Sources */,
+				EFF272531D6322BB00DE7F91 /* managerReviewVC.swift in Sources */,
+				C3473B1A1D42340100A44CC3 /* PercentageDiscountOfferVC.swift in Sources */,
+				015B58901D52048200A53B1E /* AddMenuItemViC.swift in Sources */,
+				C3473B1F1D42340100A44CC3 /* FreebiesOfferVC.swift in Sources */,
+				FA8219F01D5B3CB800495B54 /* MenuCategoriesVC.swift in Sources */,
+				C3473B201D42340100A44CC3 /* CombinedOfferVC.swift in Sources */,
+				EF2029551D6483A100F232AC /* offerTemplatesVC.swift in Sources */,
+				EFF272551D63237300DE7F91 /* managerReviewCVcell.swift in Sources */,
+				015B58921D521FB300A53B1E /* MenuItems1ViewController.swift in Sources */,
+				C3473B171D42340100A44CC3 /* DashBoardVC.swift in Sources */,
+				EF282E9B1D9108E900463310 /* ContinueManagerVC.swift in Sources */,
+				EF2029591D6484B400F232AC /* offerTemplatesCVCell.swift in Sources */,
+				EF282E951D8FCDC200463310 /* MyModel.swift in Sources */,
+				C3473B221D42340100A44CC3 /* FixedRateOfferVC.swift in Sources */,
+				C3473B181D42340100A44CC3 /* DesignAnOfferVC.swift in Sources */,
+				FAB08CE51D54BEBD005965D1 /* SignUpVC.swift in Sources */,
+				EF282E911D8FCB1800463310 /* managerreviewVC.swift in Sources */,
+				EF544F671D6333130078B80A /* managerReviewTVCell.swift in Sources */,
+				C3473AF11D4233A900A44CC3 /* AppDelegate.swift in Sources */,
+				C3473B191D42340100A44CC3 /* DiscountOfferVC.swift in Sources */,
+				EF282E991D8FEA5F00463310 /* AddLogoVC.swift in Sources */,
+				C3473B211D42340100A44CC3 /* BillValueOfferVC.swift in Sources */,
+				C3473B241D42340100A44CC3 /* RupeeDiscountOfferAdvVC.swift in Sources */,
+				FA8219F21D5B508A00495B54 /* MenuItemsVc.swift in Sources */,
+				C3473B261D42340100A44CC3 /* myOutletVC.swift in Sources */,
+				C3473B1C1D42340100A44CC3 /* TransactionsVC.swift in Sources */,
+				C3473B1B1D42340100A44CC3 /* RupeesDiscountOfferVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C3473AF91D4233AA00A44CC3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3473AFA1D4233AA00A44CC3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3473AFD1D4233AA00A44CC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C3473AFE1D4233AA00A44CC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3473B001D4233AA00A44CC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86CEE0053B6DD79C0C06A43F /* Pods-DishemMerchant.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = LMYKZ4EGC6;
+				INFOPLIST_FILE = DishemMerchant/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dishem.DishemBusiness;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3473B011D4233AA00A44CC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0585C4E8FE64564A4E7DF05 /* Pods-DishemMerchant.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = LMYKZ4EGC6;
+				INFOPLIST_FILE = DishemMerchant/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dishem.DishemBusiness;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3473AE81D4233A900A44CC3 /* Build configuration list for PBXProject "DishemMerchant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3473AFD1D4233AA00A44CC3 /* Debug */,
+				C3473AFE1D4233AA00A44CC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3473AFF1D4233AA00A44CC3 /* Build configuration list for PBXNativeTarget "DishemMerchant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3473B001D4233AA00A44CC3 /* Debug */,
+				C3473B011D4233AA00A44CC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3473AE51D4233A900A44CC3 /* Project object */;
+}

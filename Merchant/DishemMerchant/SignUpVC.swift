@@ -102,10 +102,8 @@ class SignUpVC: UIViewController {
         
     //                            self.performSegueWithIdentifier("segDashboard", sender: self)
     
-    
-    
   if(createUserStatus == "success"){
-    self.otp()
+   self.otp()
   //self.performSegueWithIdentifier("otp", sender: self)
     //self.LoginSuccess = true
     //                                print(self.LoginSucces)
